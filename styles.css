@@ -141,10 +141,38 @@ h1,h2,h3,h4,h5,h6{
 #clusters a:hover img{
     border:1px solid #BFA102;
 }
-
+.intro{
+    padding: 0 50px;
+}
+.intro a{
+    margin-top:25px;
+    display: inline-block;
+}
 @media (max-width:900px) {
     body{
         font-size:16px;
+    }
+    #wrapper img{
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    #clusters > a, #clusters a img{
+        max-height: auto;
+        max-width: 100%;
+        margin:0;
+    }
+    #clusters{
+        padding-top:0;
+    }
+    #clusters a img{
+        margin-bottom: 25px;
+    }
+    #instructions-clusters{
+        max-width:100%;
     }
     h1{
         font-size:24px;
@@ -155,6 +183,9 @@ h1,h2,h3,h4,h5,h6{
     #inner #text{
         padding:10px;
         pointer-events: none;
+    }
+    #wrapper img.on{
+        transition-delay: 2s;
     }
     #instructions{
         width: calc(100% - 20px);
