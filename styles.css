@@ -148,9 +148,21 @@ h1,h2,h3,h4,h5,h6{
     margin-top:25px;
     display: inline-block;
 }
+#desktop-only{
+    display: block;
+}
+#mobile-only{
+    display: none;
+}
 @media (max-width:900px) {
     body{
         font-size:16px;
+    }
+    #desktop-only{
+        display: none;
+    }
+    #mobile-only{
+        display: block;
     }
     #wrapper img{
         -webkit-touch-callout: none;
@@ -185,7 +197,7 @@ h1,h2,h3,h4,h5,h6{
         pointer-events: none;
     }
     #wrapper img.on{
-        transition-delay: 2s;
+        transition-delay: 0.2s;
     }
     #instructions{
         width: calc(100% - 20px);
