@@ -26,7 +26,7 @@ let text = [
     "<h1>Lorem 14</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
     "<h1>Lorem 15</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
 ]
-
+let loader = document.getElementById("loader")
 for(let i = 0; i < archive_images.length; i ++){
     let img = document.createElement("img");
     img.src = "assets/1/"+archive_images[i];
@@ -34,6 +34,11 @@ for(let i = 0; i < archive_images.length; i ++){
     let referenceNode = document.querySelector('#wrapper');
     dragElement(img);
     referenceNode.appendChild(img)
+    if(i == archive_images.length - 1){
+      img.onload = function(){
+        loader.classList.remove('on');
+      }
+    }
 }
 
 
