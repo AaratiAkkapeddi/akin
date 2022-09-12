@@ -96,6 +96,9 @@ h1,h2,h3,h4,h5,h6{
     opacity: 0.2;
     transition:1s opacity;
 }
+#wrapper.brightless img{
+    filter: brightness(35%) contrast(1.3);
+}
 @media (max-width:1280px) {
     #wrapper img{
         left:-95%;
