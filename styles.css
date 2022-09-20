@@ -1,6 +1,6 @@
 body{
-    background-color: #1E1E1E;
-    color: #BFA102;
+    background-color: #171718;
+    color: whitesmoke;
     font-family: Arial, sans-serif;
     font-size: 20px;
     margin:0;
@@ -11,9 +11,9 @@ body{
 nav{
     position:fixed;
     top:0;
-    background-color: #1e1e1ec9;
+    background-color: #171718;
     left:0;
-    width: 100%;
+    width: 101%;
     z-index: 999;
 }
 nav a{
@@ -125,12 +125,46 @@ h1,h2,h3,h4,h5,h6{
 
 #clusters {
     flex-wrap: wrap;
-    padding:50px;
+    background-image:url("assets/map-smaller.png");
+    padding:0;
+    background-size:99%;
+    background-repeat: no-repeat;
+    height: calc(100vw/ 2.16684723727);
 }
-#instructions-clusters{
-    float: right;
-    max-width: 25%;
+#clusters > *{
+    background-color: transparent;
+    width: 16.5%;
+    vertical-align: top;
+    margin:0;
+    height: calc((100vw / 2.16684723727)/3);
+    display:inline-block;
+}
+#clusters > *:nth-child(1),
+#clusters > *:nth-child(2),
+#clusters > *:nth-child(6),
+#clusters > *:nth-child(7),
+#clusters > *:nth-child(8),
+#clusters > *:nth-child(9),
+#clusters > *:nth-child(13),
+#clusters > *:nth-child(14),
+#clusters > *:nth-child(15),
+#clusters > *:nth-child(16),
+#clusters > *:nth-child(20),
+#clusters > *:nth-child(21){
+    width: 12.6%;
+}
 
+#instructions-clusters {
+    text-align: center;
+    margin-top:0;
+}
+#instructions-clusters span{
+    vertical-align: bottom;
+    text-align: center;
+    vertical-align: bottom;
+    text-align: center;
+    margin-top: 3em;
+    display: inline-block;
 }
 #clusters > a{
     max-height:500px;
@@ -141,8 +175,9 @@ h1,h2,h3,h4,h5,h6{
     margin:15px;
     max-height: 500px;
 }
-#clusters a:hover img{
-    border:1px solid #BFA102;
+#clusters a:hover{
+    background-color: rgba(245,245,245,0.5);
+    mix-blend-mode: hard-light;
 }
 .intro{
     padding: 0 50px;
@@ -174,7 +209,19 @@ h1,h2,h3,h4,h5,h6{
     background-color: #1b1b1be0;
     z-index: 999999999;
 }
+#clusters-mobile{
+    display: none;
+}
 @media (max-width:900px) {
+    #clusters{
+        display: none;
+    }
+    #clusters-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     body{
         font-size:16px;
     }
@@ -192,19 +239,30 @@ h1,h2,h3,h4,h5,h6{
         -ms-user-select: none;
         user-select: none; 
     }
-    #clusters > a, #clusters a img{
+    #clusters-mobile > a{
+        max-width:95%;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    #clusters-mobile a img{
+        margin:15px;
+        max-width: 95%;
+    }
+    #clusters-mobile > a, #clusters-mobile a img{
         max-height: auto;
-        max-width: 100%;
+        max-width: 95%;
         margin:0;
     }
-    #clusters{
+    #clusters-mobile{
         padding-top:0;
     }
-    #clusters a img{
+    #clusters-mobile a img{
         margin-bottom: 25px;
     }
     #instructions-clusters{
-        max-width:100%;
+        max-width:70%;
+        margin-top: 0;
     }
     h1{
         font-size:24px;
