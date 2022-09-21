@@ -103,7 +103,7 @@ function dragElement(elmnt) {
       let last = e.target.src.substring(e.target.src.lastIndexOf("/") + 1, e.target.src.length);
       newEl.src = rest + "small/" + last
       newEl.id = "icon"+e.target.id
-      hist.append(newEl)
+      hist.insertBefore(newEl,hist.firstChild)
       newEl.addEventListener("click", function(){
         if(this.classList.contains("on")){
           this.classList.remove("on")
