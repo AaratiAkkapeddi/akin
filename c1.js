@@ -11,20 +11,20 @@ let archive_images = [
 ]
 let ogtext = "<h1>Cluster 1</h1><p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>"
 let text = [
-    "<h1>Lorem 2</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 3</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 4</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 5</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 6</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 7</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 8</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 9</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 10</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 11</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 12</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 13</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 14</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 15</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+  "<h1>R DASEN STUDIO</h1><p>Karaikudi, Tamil Nadu</p>",
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>"
 ]
 let loader = document.getElementById("loader")
 for(let i = 0; i < archive_images.length; i ++){
@@ -59,6 +59,7 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     pos4 = e.clientY;
     e.target.classList.add('on')
+
     document.querySelector("#text").innerHTML = text[parseInt(e.target.id.split("-")[1])];
     document.onmouseup = closeDragElement;
     // call a function whenever the cursor moves:
@@ -68,6 +69,10 @@ function dragElement(elmnt) {
   function elementDrag(e) {
     e = e || window.event;
     e.preventDefault();
+    let els = document.querySelectorAll("#history img");
+    for(let i = 0; i < els.length; i ++){
+      els[i].classList.remove("on")
+    }
     // calculate the new cursor position:
     pos1 = pos3 - e.clientX;
     pos2 = pos4 - e.clientY;
@@ -83,6 +88,31 @@ function dragElement(elmnt) {
     document.onmouseup = null;
     document.onmousemove = null;
     e.target.classList.remove('on')
+    let hist = document.querySelector("#history-icons");
+    let newDiv = document.createElement("div");
+    if(e.target.src){
+      let newEl = document.createElement('img')
+      let rest = e.target.src.substring(0, e.target.src.lastIndexOf("/") + 1);
+      let last = e.target.src.substring(e.target.src.lastIndexOf("/") + 1, e.target.src.length);
+      newEl.src = rest + "small/" + last
+      newEl.id = "icon"+e.target.id
+      hist.append(newEl)
+      newEl.addEventListener("click", function(){
+        if(this.classList.contains("on")){
+          this.classList.remove("on")
+          document.querySelector("#text").innerHTML = ogtext;
+        }else{
+          let els = document.querySelectorAll("#history img");
+          for(let i = 0; i < els.length; i ++){
+            els[i].classList.remove("on")
+          }
+          this.classList.add("on")
+          document.querySelector("#text").innerHTML = text[parseInt(this.id.split("-")[1])];
+        }
+      })
+      let label = document.querySelector("#hist-label");
+      label.classList.add('on')
+    }
     document.querySelector("#text").innerHTML = ogtext;
     e.target.classList.add('moved');
     let imgs = document.querySelectorAll("img");

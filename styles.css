@@ -29,7 +29,7 @@ nav a:hover{
     margin-left:0;
     padding-left:25px;
     z-index: 2;
-    background-color: #1e1e1ec9;
+    /* background-color: #171718ac; */
     width:calc(60% - 97px);
     margin-top:4px;
     padding-top: 15px;
@@ -57,18 +57,20 @@ a:link, a:hover, a:visited, a{
     display: flex;
     overflow:hidden;
     max-width: 100%;
+    width:100%;
     position: absolute;
     top:0;
     left:0;
     padding-top:54px;
     justify-content: space-between;
 }
+
 #inner #text{
-    flex-basis:40%;
+    flex-basis:30%;
     padding:25px 60px;
     z-index: 8;
     position:relative;
-    background-color: #1e1e1ec9;
+    /* background-color: #171718ac; */
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: normal;
@@ -84,13 +86,46 @@ h1,h2,h3,h4,h5,h6{
     width: 60%;
     height:100vh;
     margin:0;
-    flex-basis: 60%;
+    flex-basis: 30%;
     position: relative;
+}
+#history{
+    width: 30%;
+    margin-top:100px;
+    padding:20px;
+    position: relative;
+    z-index: 3;
+}
+#history-icons{
+    height: calc(100vh - 200px);
+    overflow: scroll;
+}
+
+#history img{
+    width:100px;
+    opacity: 1;
+    margin-left:0;
+    margin-right:10px;
+    margin:5px;
+}
+
+#history img.on{
+    border:1px solid white;
+    padding:2px;
+    width:calc(100% - 40px);
+}
+
+#hist-label{
+    display: none;
+}
+#hist-label.on{
+    display: block;
+    padding-bottom:0;
 }
 #wrapper img{
     position: absolute;
     top:-600px;
-    left:-75%;
+    left:-160%;
     mix-blend-mode: screen;
     filter: brightness(53%) contrast(1.5);
     opacity: 0.2;
@@ -153,6 +188,33 @@ h1,h2,h3,h4,h5,h6{
 #clusters > *:nth-child(21){
     width: 12.6%;
 }
+#clusters > *:nth-child(12){
+    width:15.7%;
+}
+#clusters > *:nth-child(4){
+    width:15.4%;
+}
+#clusters > *:nth-child(8){
+    width:13%;
+}
+#clusters > *:nth-child(9){
+    width:12%;
+}
+#clusters > *:nth-child(18){
+    width:15.4%;
+}
+
+#clusters > *:nth-child(13){
+    width:12%;
+}
+#clusters > a{
+    background-color: rgba(245,245,245,1);
+    mix-blend-mode: color;
+}
+#clusters > a:hover{
+   mix-blend-mode: normal;
+   background-color: transparent;
+}
 
 #instructions-clusters {
     text-align: center;
@@ -175,10 +237,10 @@ h1,h2,h3,h4,h5,h6{
     margin:15px;
     max-height: 500px;
 }
-#clusters a:hover{
+/* #clusters a:hover{
     background-color: rgba(245,245,245,0.5);
     mix-blend-mode: hard-light;
-}
+} */
 .intro{
     padding: 0 50px;
 }
