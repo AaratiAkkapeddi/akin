@@ -205,6 +205,14 @@ h1,h2,h3,h4,h5,h6{
     height: calc((100vw / 2.16684723727)/3);
     display:inline-block;
 }
+.kolam{
+    vertical-align: bottom;
+    padding: 10px;
+    position:absolute;
+    top:10px;
+    width:35px;
+    left: 40px;
+}
 #clusters > *:nth-child(1),
 #clusters > *:nth-child(2),
 #clusters > *:nth-child(6),
@@ -278,7 +286,7 @@ h1,h2,h3,h4,h5,h6{
     line-height: 1.5;
 }
 .intro a{
-    margin-top:25px;
+    margin-top:0;
     display: inline-block;
 }
 #desktop-only{
@@ -425,5 +433,20 @@ h1,h2,h3,h4,h5,h6{
         margin:0;
         flex-basis: auto;
         position: relative;
+    }
+    .intro{
+        padding: 0 10px;
+        margin-bottom:100px;
+    }
+    iframe{
+        margin-top:50px;
+    }
+    .kolam{
+        vertical-align: bottom;
+        padding: 10px;
+        position:absolute;
+        top:10px;
+        width:35px;
+        left:0;
     }
 }
