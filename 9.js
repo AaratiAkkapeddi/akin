@@ -16,22 +16,22 @@ let archive_images = [
     "image3.png",
     "seenu5.png",
 ]
-let ogtext = "<h1>Cluster 1</h1><p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>"
+let ogtext = "<h1>Children posing with an object for support, usually a side table with flowers.</h1><p>Composite of 14 photographs, 11 of them from the stars.archive and 3 from the artist’s family albums. Images include those from R. Dasen Studio in Coimbatore, Sundram Studio in Karaikudi, Victoria Studio in Madurai, Naidu & Sons Studio in Nagapattinam, Navakodi Studio in Thanjavur and Newtone Studio in Thoothukudi and others from unidentified sources.<br><br>“This archetype is actually not unique to Tamil photography. It points to longer exposure times where accessories, such as furniture, became a way to stabilize the subject. The objects themselves are interesting in that some in this cluster use ‘neoclassical’ backdrops such as pillars or carved wooden tables, but some are மோடா, a type of stool made from bamboo, or other rattan furniture.”</p>"
 let text = [
-    "<h1>Lorem 2</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 3</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 4</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 5</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 6</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 7</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 8</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 9</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 10</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 11</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 12</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 13</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 14</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-    "<h1>Lorem 15</h1><p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+    "<h1>R. Dasen Studio</h1><p>Karaikudi, Tamil Nadu.</p>",
+    "<h1>Sundram Studio</h1><p>Karaikudi, Tamil Nadu.</p>",
+    "<h1>Victoria Studio</h1><p>Madurai, Tamil Nadu.</p>",
+    "<h1>Victoria Studio</h1><p>Madurai, Tamil Nadu.</p>",
+    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
+    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
+    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
+    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
+    "<h1>G.V. Naidu & Sons Studio</h1><p>Nagapattinam, Tamil Nadu</p>",
+    "<h1>Unknown Studio</h1><p>This is photograph of my mother (Sudha Akkapeddi) as a baby.</p>",
+    "<h1>Navakodi Studio</h1><p>Thanjavur, Tamil Nadu</p>",
+    "<h1>Newtone Studio</h1><p>Thoothukudi, Tamil Nadu</p>",
+    "<h1>Unknown Studio</h1><p>This is a photograph of my uncle Seetharam Ramavarapu.</p>",
+    "<h1>Unknown Studio</h1><p>This is a photograph of my uncle Seetharam Ramavarapu.</p>"
 ]
 
 let loader = document.getElementById("loader")
