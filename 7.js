@@ -9,7 +9,7 @@ let archive_images = [
     "MISCELLANEOUS_M8_2015_00011.nef copy 2.jpg.png",
     "MISCELLANEOUS_M8_2015_00012.nef copy.jpg.png",
     "MISCELLANEOUS_M9_2015_00191.nef copy 3.jpg.png",
-    "Scan_47.png",
+    "mom.png",
     "image62.jpg.png",
     "image_44.png"
 ]
@@ -24,8 +24,8 @@ let text = [
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Guhan Studio</h1><p>Chennai, Tamil Nadu.<br><br>This is a photograph of my mother (Sudha Akkapeddi) originally taken for use in an application or form but this particular image is of a copy kept for personal/sentimental use.</p>",
-    "<h1>Guhan Studio</h1><p>Chennai, Tamil Nadu.<br><br>This is a photograph of my mother (Sudha Akkapeddi) used probably in an application or form for Stanley Medical College in Chennai.</p>",
-    "<h1>Unknown Studio</h1><p>Maybe Chidambaram, Tamil Nadu. <br> This is a photograph of my mother's mother, Suseela Ramavarapu (neé Vyasarayani). This is probably either a school portrait or taken for matchmaking purposes. I know she is unmarried because she isn't wearing a type of necklace (Mangala Sutra) that hindu women wear after marriage. </p>"
+    "<h1>Unknown Studio</h1><p>Maybe Chidambaram, Tamil Nadu. <br> This is a photograph of my mother's mother, Suseela Ramavarapu (neé Vyasarayani). This is probably either a school portrait or taken for matchmaking purposes. I know she is unmarried because she isn't wearing a type of necklace (Mangala Sutra) that hindu women wear after marriage. </p>",
+    "<h1>Guhan Studio</h1><p>Chennai, Tamil Nadu.<br><br>This is a photograph of my mother (Sudha Akkapeddi) used probably in an application or form for Stanley Medical College in Chennai.</p>"
 ]
 
 let loader = document.getElementById("loader")

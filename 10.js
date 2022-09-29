@@ -28,6 +28,7 @@ let text = [
     "<h1>R. Dasen Studio</h1><p>Coimbatore, Tamil Nadu</p>",
     "<h1>R. Dasen Studio</h1><p>Coimbatore, Tamil Nadu</p>",
     "<h1>Tamilnadu Studio</h1><p>Madurai, Tamil Nadu</p>",
+    "<h1>New Studio</h1><p>Madurai, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
