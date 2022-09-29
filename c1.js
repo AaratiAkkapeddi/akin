@@ -17,7 +17,7 @@ let text = [
   "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
   "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
   "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
-  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>"
+  "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu.<br><br> This photograph appears (because of the sign in the background) to be of Ayyappan worshippers either embarking on or returning from a pilgrimage to the state of Kerala.</p>"
 ]
 let loader = document.getElementById("loader")
 for(let i = 0; i < archive_images.length; i ++){
