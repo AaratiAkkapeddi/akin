@@ -12,7 +12,1198 @@
         <a href="./index.html">← Back</a>
     </nav>
     <div class="grid-intro intro">
-        Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        VGG-16 is a neural network model for object detection and image classification proposed by Karen Simonyan and Andrew Zisserman at the University of Oxford. The pre-trained model is trained on images from <a href="https://www.image-net.org/">ImageNet</a> and uses 1000 classification categories:
+        <ul id="cats">
+            <li>0	tench, Tinca tinca</li>
+            <li>1	goldfish, Carassius auratus</li>
+            <li>2	great white shark, white shark, man-eater, man-eating shark, Carcharodon caharias',</li>
+            <li>3	tiger shark, Galeocerdo cuvieri</li>
+            <li>4	hammerhead, hammerhead shark</li>
+            <li>5	electric ray, crampfish, numbfish, torpedo</li>
+            <li>6	stingray</li>
+            <li>7	cock</li>
+            <li>8	hen</li>
+            <li>9	ostrich, Struthio camelus</li>
+            <li>10	brambling, Fringilla montifringilla</li>
+            <li>11	goldfinch, Carduelis carduelis</li>
+            <li>12	house finch, linnet, Carpodacus mexicanus</li>
+            <li>13	junco, snowbird</li>
+            <li>14	indigo bunting, indigo finch, indigo bird, Passerina cyanea</li>
+            <li>15	robin, American robin, Turdus migratorius</li>
+            <li>16	bulbul</li>
+            <li>17	jay</li>
+            <li>18	magpie</li>
+            <li>19	chickadee</li>
+            <li>20	water ouzel, dipper</li>
+            <li>21	kite</li>
+            <li>22	bald eagle, American eagle, Haliaeetus leucocephalus</li>
+            <li>23	vulture</li>
+            <li>24	great grey owl, great gray owl, Strix nebulosa</li>
+            <li>25	European fire salamander, Salamandra salamandra</li>
+            <li>26	common newt, Triturus vulgaris</li>
+            <li>27	eft</li>
+            <li>28	spotted salamander, Ambystoma maculatum</li>
+            <li>29	axolotl, mud puppy, Ambystoma mexicanum</li>
+            <li>30	bullfrog, Rana catesbeiana</li>
+            <li>31	tree frog, tree-frog</li>
+            <li>32	tailed frog, bell toad, ribbed toad, tailed toad, Ascaphus trui</li>
+            <li>33	loggerhead, loggerhead turtle, Caretta caretta</li>
+            <li>34	leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea</li>
+            <li>35	mud turtle</li>
+            <li>36	terrapin</li>
+            <li>37	box turtle, box tortoise</li>
+            <li>38	banded gecko</li>
+            <li>39	common iguana, iguana, Iguana iguana</li>
+            <li>40	American chameleon, anole, Anolis carolinensis</li>
+            <li>41	whiptail, whiptail lizard</li>
+            <li>42	agama</li>
+            <li>43	frilled lizard, Chlamydosaurus kingi</li>
+            <li>44	alligator lizard</li>
+            <li>45	Gila monster, Heloderma suspectum</li>
+            <li>46	green lizard, Lacerta viridis</li>
+            <li>47	African chameleon, Chamaeleo chamaeleon</li>
+            <li>48	Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoeis',</li>
+            <li>49	African crocodile, Nile crocodile, Crocodylus niloticus</li>
+            <li>50	American alligator, Alligator mississipiensis</li>
+            <li>51	triceratops</li>
+            <li>52	thunder snake, worm snake, Carphophis amoenus</li>
+            <li>53	ringneck snake, ring-necked snake, ring snake</li>
+            <li>54	hognose snake, puff adder, sand viper</li>
+            <li>55	green snake, grass snake</li>
+            <li>56	king snake, kingsnake</li>
+            <li>57	garter snake, grass snake</li>
+            <li>58	water snake</li>
+            <li>59	vine snake</li>
+            <li>60	night snake, Hypsiglena torquata</li>
+            <li>61	boa constrictor, Constrictor constrictor</li>
+            <li>62	rock python, rock snake, Python sebae</li>
+            <li>63	Indian cobra, Naja naja</li>
+            <li>64	green mamba</li>
+            <li>65	sea snake</li>
+            <li>66	horned viper, cerastes, sand viper, horned asp, Cerastes cornutus</li>
+            <li>67	diamondback, diamondback rattlesnake, Crotalus adamanteus</li>
+            <li>68	sidewinder, horned rattlesnake, Crotalus cerastes</li>
+            <li>69	trilobite</li>
+            <li>70	harvestman, daddy longlegs, Phalangium opilio</li>
+            <li>71	scorpion</li>
+            <li>72	black and gold garden spider, Argiope aurantia</li>
+            <li>73	barn spider, Araneus cavaticus</li>
+            <li>74	garden spider, Aranea diademata</li>
+            <li>75	black widow, Latrodectus mactans</li>
+            <li>76	tarantula</li>
+            <li>77	wolf spider, hunting spider</li>
+            <li>78	tick</li>
+            <li>79	centipede</li>
+            <li>80	black grouse</li>
+            <li>81	ptarmigan</li>
+            <li>82	ruffed grouse, partridge, Bonasa umbellus</li>
+            <li>83	prairie chicken, prairie grouse, prairie fowl</li>
+            <li>84	peacock</li>
+            <li>85	quail</li>
+            <li>86	partridge</li>
+            <li>87	African grey, African gray, Psittacus erithacus</li>
+            <li>88	macaw</li>
+            <li>89	sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita</li>
+            <li>90	lorikeet</li>
+            <li>91	coucal</li>
+            <li>92	bee eater</li>
+            <li>93	hornbill</li>
+            <li>94	hummingbird</li>
+            <li>95	jacamar</li>
+            <li>96	toucan</li>
+            <li>97	drake</li>
+            <li>98	red-breasted merganser, Mergus serrator</li>
+            <li>99	goose</li>
+            <li>100	black swan, Cygnus atratus</li>
+            <li>101	tusker</li>
+            <li>102	echidna, spiny anteater, anteater</li>
+            <li>103	platypus, duckbill, duckbilled platypus, duck-billed platypus, Ornithorhyhus anatinus',</li>
+            <li>104	wallaby, brush kangaroo</li>
+            <li>105	koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus</li>
+            <li>106	wombat</li>
+            <li>107	jellyfish</li>
+            <li>108	sea anemone, anemone</li>
+            <li>109	brain coral</li>
+            <li>110	flatworm, platyhelminth</li>
+            <li>111	nematode, nematode worm, roundworm</li>
+            <li>112	conch</li>
+            <li>113	snail</li>
+            <li>114	slug</li>
+            <li>115	sea slug, nudibranch</li>
+            <li>116	chiton, coat-of-mail shell, sea cradle, polyplacophore</li>
+            <li>117	chambered nautilus, pearly nautilus, nautilus</li>
+            <li>118	Dungeness crab, Cancer magister</li>
+            <li>119	rock crab, Cancer irroratus</li>
+            <li>120	fiddler crab</li>
+            <li>121	king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodesamtschatica',</li>
+            <li>122	American lobster, Northern lobster, Maine lobster, Homarus americanus</li>
+            <li>123	spiny lobster, langouste, rock lobster, crawfish, crayfish, sea crawfish</li>
+            <li>124	crayfish, crawfish, crawdad, crawdaddy</li>
+            <li>125	hermit crab</li>
+            <li>126	isopod</li>
+            <li>127	white stork, Ciconia ciconia</li>
+            <li>128	black stork, Ciconia nigra</li>
+            <li>129	spoonbill</li>
+            <li>130	flamingo</li>
+            <li>131	little blue heron, Egretta caerulea</li>
+            <li>132	American egret, great white heron, Egretta albus</li>
+            <li>133	bittern</li>
+            <li>134	crane, bird</li>
+            <li>135	limpkin, Aramus pictus</li>
+            <li>136	European gallinule, Porphyrio porphyrio</li>
+            <li>137	American coot, marsh hen, mud hen, water hen, Fulica americana</li>
+            <li>138	bustard</li>
+            <li>139	ruddy turnstone, Arenaria interpres</li>
+            <li>140	red-backed sandpiper, dunlin, Erolia alpina</li>
+            <li>141	redshank, Tringa totanus</li>
+            <li>142	dowitcher</li>
+            <li>143	oystercatcher, oyster catcher</li>
+            <li>144	pelican</li>
+            <li>145	king penguin, Aptenodytes patagonica</li>
+            <li>146	albatross, mollymawk</li>
+            <li>147	grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius rostus',</li>
+            <li>148	killer whale, killer, orca, grampus, sea wolf, Orcinus orca</li>
+            <li>149	dugong, Dugong dugon</li>
+            <li>150	sea lion</li>
+            <li>151	Chihuahua</li>
+            <li>152	Japanese spaniel</li>
+            <li>153	Maltese dog, Maltese terrier, Maltese</li>
+            <li>154	Pekinese, Pekingese, Peke</li>
+            <li>155	Shih-Tzu</li>
+            <li>156	Blenheim spaniel</li>
+            <li>157	papillon</li>
+            <li>158	toy terrier</li>
+            <li>159	Rhodesian ridgeback</li>
+            <li>160	Afghan hound, Afghan</li>
+            <li>161	basset, basset hound</li>
+            <li>162	beagle</li>
+            <li>163	bloodhound, sleuthhound</li>
+            <li>164	bluetick</li>
+            <li>165	black-and-tan coonhound</li>
+            <li>166	Walker hound, Walker foxhound</li>
+            <li>167	English foxhound</li>
+            <li>168	redbone</li>
+            <li>169	borzoi, Russian wolfhound</li>
+            <li>170	Irish wolfhound</li>
+            <li>171	Italian greyhound</li>
+            <li>172	whippet</li>
+            <li>173	Ibizan hound, Ibizan Podenco</li>
+            <li>174	Norwegian elkhound, elkhound</li>
+            <li>175	otterhound, otter hound</li>
+            <li>176	Saluki, gazelle hound</li>
+            <li>177	Scottish deerhound, deerhound</li>
+            <li>178	Weimaraner</li>
+            <li>179	Staffordshire bullterrier, Staffordshire bull terrier</li>
+            <li>180	American Staffordshire terrier, Staffordshire terrier, American pit bull rrier, pit bull terrier',</li>
+            <li>181	Bedlington terrier</li>
+            <li>182	Border terrier</li>
+            <li>183	Kerry blue terrier</li>
+            <li>184	Irish terrier</li>
+            <li>185	Norfolk terrier</li>
+            <li>186	Norwich terrier</li>
+            <li>187	Yorkshire terrier</li>
+            <li>188	wire-haired fox terrier</li>
+            <li>189	Lakeland terrier</li>
+            <li>190	Sealyham terrier, Sealyham</li>
+            <li>191	Airedale, Airedale terrier</li>
+            <li>192	cairn, cairn terrier</li>
+            <li>193	Australian terrier</li>
+            <li>194	Dandie Dinmont, Dandie Dinmont terrier</li>
+            <li>195	Boston bull, Boston terrier</li>
+            <li>196	miniature schnauzer</li>
+            <li>197	giant schnauzer</li>
+            <li>198	standard schnauzer</li>
+            <li>199	Scotch terrier, Scottish terrier, Scottie</li>
+            <li>200	Tibetan terrier, chrysanthemum dog</li>
+            <li>201	silky terrier, Sydney silky</li>
+            <li>202	soft-coated wheaten terrier</li>
+            <li>203	West Highland white terrier</li>
+            <li>204	Lhasa, Lhasa apso</li>
+            <li>205	flat-coated retriever</li>
+            <li>206	curly-coated retriever</li>
+            <li>207	golden retriever</li>
+            <li>208	Labrador retriever</li>
+            <li>209	Chesapeake Bay retriever</li>
+            <li>210	German short-haired pointer</li>
+            <li>211	vizsla, Hungarian pointer</li>
+            <li>212	English setter</li>
+            <li>213	Irish setter, red setter</li>
+            <li>214	Gordon setter</li>
+            <li>215	Brittany spaniel</li>
+            <li>216	clumber, clumber spaniel</li>
+            <li>217	English springer, English springer spaniel</li>
+            <li>218	Welsh springer spaniel</li>
+            <li>219	cocker spaniel, English cocker spaniel, cocker</li>
+            <li>220	Sussex spaniel</li>
+            <li>221	Irish water spaniel</li>
+            <li>222	kuvasz</li>
+            <li>223	schipperke</li>
+            <li>224	groenendael</li>
+            <li>225	malinois</li>
+            <li>226	briard</li>
+            <li>227	kelpie</li>
+            <li>228	komondor</li>
+            <li>229	Old English sheepdog, bobtail</li>
+            <li>230	Shetland sheepdog, Shetland sheep dog, Shetland</li>
+            <li>231	collie</li>
+            <li>232	Border collie</li>
+            <li>233	Bouvier des Flandres, Bouviers des Flandres</li>
+            <li>234	Rottweiler</li>
+            <li>235	German shepherd, German shepherd dog, German police dog, alsatian</li>
+            <li>236	Doberman, Doberman pinscher</li>
+            <li>237	miniature pinscher</li>
+            <li>238	Greater Swiss Mountain dog</li>
+            <li>239	Bernese mountain dog</li>
+            <li>240	Appenzeller</li>
+            <li>241	EntleBucher</li>
+            <li>242	boxer</li>
+            <li>243	bull mastiff</li>
+            <li>244	Tibetan mastiff</li>
+            <li>245	French bulldog</li>
+            <li>246	Great Dane</li>
+            <li>247	Saint Bernard, St Bernard</li>
+            <li>248	Eskimo dog, husky</li>
+            <li>249	malamute, malemute, Alaskan malamute</li>
+            <li>250	Siberian husky</li>
+            <li>251	dalmatian, coach dog, carriage dog</li>
+            <li>252	affenpinscher, monkey pinscher, monkey dog</li>
+            <li>253	basenji</li>
+            <li>254	pug, pug-dog</li>
+            <li>255	Leonberg</li>
+            <li>256	Newfoundland, Newfoundland dog</li>
+            <li>257	Great Pyrenees</li>
+            <li>258	Samoyed, Samoyede</li>
+            <li>259	Pomeranian</li>
+            <li>260	chow, chow chow</li>
+            <li>261	keeshond</li>
+            <li>262	Brabancon griffon</li>
+            <li>263	Pembroke, Pembroke Welsh corgi</li>
+            <li>264	Cardigan, Cardigan Welsh corgi</li>
+            <li>265	toy poodle</li>
+            <li>266	miniature poodle</li>
+            <li>267	standard poodle</li>
+            <li>268	Mexican hairless</li>
+            <li>269	timber wolf, grey wolf, gray wolf, Canis lupus</li>
+            <li>270	white wolf, Arctic wolf, Canis lupus tundrarum</li>
+            <li>271	red wolf, maned wolf, Canis rufus, Canis niger</li>
+            <li>272	coyote, prairie wolf, brush wolf, Canis latrans</li>
+            <li>273	dingo, warrigal, warragal, Canis dingo</li>
+            <li>274	dhole, Cuon alpinus</li>
+            <li>275	African hunting dog, hyena dog, Cape hunting dog, Lycaon pictus</li>
+            <li>276	hyena, hyaena</li>
+            <li>277	red fox, Vulpes vulpes</li>
+            <li>278	kit fox, Vulpes macrotis</li>
+            <li>279	Arctic fox, white fox, Alopex lagopus</li>
+            <li>280	grey fox, gray fox, Urocyon cinereoargenteus</li>
+            <li>281	tabby, tabby cat</li>
+            <li>282	tiger cat</li>
+            <li>283	Persian cat</li>
+            <li>284	Siamese cat, Siamese</li>
+            <li>285	Egyptian cat</li>
+            <li>286	cougar, puma, catamount, mountain lion, painter, panther, Felis concolor</li>
+            <li>287	lynx, catamount</li>
+            <li>288	leopard, Panthera pardus</li>
+            <li>289	snow leopard, ounce, Panthera uncia</li>
+            <li>290	jaguar, panther, Panthera onca, Felis onca</li>
+            <li>291	lion, king of beasts, Panthera leo</li>
+            <li>292	tiger, Panthera tigris</li>
+            <li>293	cheetah, chetah, Acinonyx jubatus</li>
+            <li>294	brown bear, bruin, Ursus arctos</li>
+            <li>295	American black bear, black bear, Ursus americanus, Euarctos americanus</li>
+            <li>296	ice bear, polar bear, Ursus Maritimus, Thalarctos maritimus</li>
+            <li>297	sloth bear, Melursus ursinus, Ursus ursinus</li>
+            <li>298	mongoose</li>
+            <li>299	meerkat, mierkat</li>
+            <li>300	tiger beetle</li>
+            <li>301	ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle</li>
+            <li>302	ground beetle, carabid beetle</li>
+            <li>303	long-horned beetle, longicorn, longicorn beetle</li>
+            <li>304	leaf beetle, chrysomelid</li>
+            <li>305	dung beetle</li>
+            <li>306	rhinoceros beetle</li>
+            <li>307	weevil</li>
+            <li>308	fly</li>
+            <li>309	bee</li>
+            <li>310	ant, emmet, pismire</li>
+            <li>311	grasshopper, hopper</li>
+            <li>312	cricket</li>
+            <li>313	walking stick, walkingstick, stick insect</li>
+            <li>314	cockroach, roach</li>
+            <li>315	mantis, mantid</li>
+            <li>316	cicada, cicala</li>
+            <li>317	leafhopper</li>
+            <li>318	lacewing, lacewing fly</li>
+            <li>319	dragonfly, darning needle, devil's darning needle, sewing needle, snake fder, snake doctor, mosquito hawk, skeeter hawk",</li>
+            <li>320	damselfly</li>
+            <li>321	admiral</li>
+            <li>322	ringlet, ringlet butterfly</li>
+            <li>323	monarch, monarch butterfly, milkweed butterfly, Danaus plexippus</li>
+            <li>324	cabbage butterfly</li>
+            <li>325	sulphur butterfly, sulfur butterfly</li>
+            <li>326	lycaenid, lycaenid butterfly</li>
+            <li>327	starfish, sea star</li>
+            <li>328	sea urchin</li>
+            <li>329	sea cucumber, holothurian</li>
+            <li>330	wood rabbit, cottontail, cottontail rabbit</li>
+            <li>331	hare</li>
+            <li>332	Angora, Angora rabbit</li>
+            <li>333	hamster</li>
+            <li>334	porcupine, hedgehog</li>
+            <li>335	fox squirrel, eastern fox squirrel, Sciurus niger</li>
+            <li>336	marmot</li>
+            <li>337	beaver</li>
+            <li>338	guinea pig, Cavia cobaya</li>
+            <li>339	sorrel</li>
+            <li>340	zebra</li>
+            <li>341	hog, pig, grunter, squealer, Sus scrofa</li>
+            <li>342	wild boar, boar, Sus scrofa</li>
+            <li>343	warthog</li>
+            <li>344	hippopotamus, hippo, river horse, Hippopotamus amphibius</li>
+            <li>345	ox</li>
+            <li>346	water buffalo, water ox, Asiatic buffalo, Bubalus bubalis</li>
+            <li>347	bison</li>
+            <li>348	ram, tup</li>
+            <li>349	bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain eep, Ovis canadensis',</li>
+            <li>350	ibex, Capra ibex</li>
+            <li>351	hartebeest</li>
+            <li>352	impala, Aepyceros melampus</li>
+            <li>353	gazelle</li>
+            <li>354	Arabian camel, dromedary, Camelus dromedarius</li>
+            <li>355	llama</li>
+            <li>356	weasel</li>
+            <li>357	mink</li>
+            <li>358	polecat, fitch, foulmart, foumart, Mustela putorius</li>
+            <li>359	black-footed ferret, ferret, Mustela nigripes</li>
+            <li>360	otter</li>
+            <li>361	skunk, polecat, wood pussy</li>
+            <li>362	badger</li>
+            <li>363	armadillo</li>
+            <li>364	three-toed sloth, ai, Bradypus tridactylus</li>
+            <li>365	orangutan, orang, orangutang, Pongo pygmaeus</li>
+            <li>366	gorilla, Gorilla gorilla</li>
+            <li>367	chimpanzee, chimp, Pan troglodytes</li>
+            <li>368	gibbon, Hylobates lar</li>
+            <li>369	siamang, Hylobates syndactylus, Symphalangus syndactylus</li>
+            <li>370	guenon, guenon monkey</li>
+            <li>371	patas, hussar monkey, Erythrocebus patas</li>
+            <li>372	baboon</li>
+            <li>373	macaque</li>
+            <li>374	langur</li>
+            <li>375	colobus, colobus monkey</li>
+            <li>376	proboscis monkey, Nasalis larvatus</li>
+            <li>377	marmoset</li>
+            <li>378	capuchin, ringtail, Cebus capucinus</li>
+            <li>379	howler monkey, howler</li>
+            <li>380	titi, titi monkey</li>
+            <li>381	spider monkey, Ateles geoffroyi</li>
+            <li>382	squirrel monkey, Saimiri sciureus</li>
+            <li>383	Madagascar cat, ring-tailed lemur, Lemur catta</li>
+            <li>384	indri, indris, Indri indri, Indri brevicaudatus</li>
+            <li>385	Indian elephant, Elephas maximus</li>
+            <li>386	African elephant, Loxodonta africana</li>
+            <li>387	lesser panda, red panda, panda, bear cat, cat bear, Ailurus fulgens</li>
+            <li>388	giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca</li>
+            <li>389	barracouta, snoek</li>
+            <li>390	eel</li>
+            <li>391	coho, cohoe, coho salmon, blue jack, silver salmon, Oncorhynchus kisutch</li>
+            <li>392	rock beauty, Holocanthus tricolor</li>
+            <li>393	anemone fish</li>
+            <li>394	sturgeon</li>
+            <li>395	gar, garfish, garpike, billfish, Lepisosteus osseus</li>
+            <li>396	lionfish</li>
+            <li>397	puffer, pufferfish, blowfish, globefish</li>
+            <li>398	abacus</li>
+            <li>399	abaya</li>
+            <li>400	academic gown, academic robe, judge's robe</li>
+            <li>401	accordion, piano accordion, squeeze box</li>
+            <li>402	acoustic guitar</li>
+            <li>403	aircraft carrier, carrier, flattop, attack aircraft carrier</li>
+            <li>404	airliner</li>
+            <li>405	airship, dirigible</li>
+            <li>406	altar</li>
+            <li>407	ambulance</li>
+            <li>408	amphibian, amphibious vehicle</li>
+            <li>409	analog clock</li>
+            <li>410	apiary, bee house</li>
+            <li>411	apron</li>
+            <li>412	ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustb, trash barrel, trash bin',</li>
+            <li>413	assault rifle, assault gun</li>
+            <li>414	backpack, back pack, knapsack, packsack, rucksack, haversack</li>
+            <li>415	bakery, bakeshop, bakehouse</li>
+            <li>416	balance beam, beam</li>
+            <li>417	balloon</li>
+            <li>418	ballpoint, ballpoint pen, ballpen, Biro</li>
+            <li>419	Band Aid</li>
+            <li>420	banjo</li>
+            <li>421	bannister, banister, balustrade, balusters, handrail</li>
+            <li>422	barbell</li>
+            <li>423	barber chair</li>
+            <li>424	barbershop</li>
+            <li>425	barn</li>
+            <li>426	barometer</li>
+            <li>427	barrel, cask</li>
+            <li>428	barrow, garden cart, lawn cart, wheelbarrow</li>
+            <li>429	baseball</li>
+            <li>430	basketball</li>
+            <li>431	bassinet</li>
+            <li>432	bassoon</li>
+            <li>433	bathing cap, swimming cap</li>
+            <li>434	bath towel</li>
+            <li>435	bathtub, bathing tub, bath, tub</li>
+            <li>436	beach wagon, station wagon, wagon, estate car, beach waggon, station wagg, waggon',</li>
+            <li>437	beacon, lighthouse, beacon light, pharos</li>
+            <li>438	beaker</li>
+            <li>439	bearskin, busby, shako</li>
+            <li>440	beer bottle</li>
+            <li>441	beer glass</li>
+            <li>442	bell cote, bell cot</li>
+            <li>443	bib</li>
+            <li>444	bicycle-built-for-two, tandem bicycle, tandem</li>
+            <li>445	bikini, two-piece</li>
+            <li>446	binder, ring-binder</li>
+            <li>447	binoculars, field glasses, opera glasses</li>
+            <li>448	birdhouse</li>
+            <li>449	boathouse</li>
+            <li>450	bobsled, bobsleigh, bob</li>
+            <li>451	bolo tie, bolo, bola tie, bola</li>
+            <li>452	bonnet, poke bonnet</li>
+            <li>453	bookcase</li>
+            <li>454	bookshop, bookstore, bookstall</li>
+            <li>455	bottlecap</li>
+            <li>456	bow</li>
+            <li>457	bow tie, bow-tie, bowtie</li>
+            <li>458	brass, memorial tablet, plaque</li>
+            <li>459	brassiere, bra, bandeau</li>
+            <li>460	breakwater, groin, groyne, mole, bulwark, seawall, jetty</li>
+            <li>461	breastplate, aegis, egis</li>
+            <li>462	broom</li>
+            <li>463	bucket, pail</li>
+            <li>464	buckle</li>
+            <li>465	bulletproof vest</li>
+            <li>466	bullet train, bullet</li>
+            <li>467	butcher shop, meat market</li>
+            <li>468	cab, hack, taxi, taxicab</li>
+            <li>469	caldron, cauldron</li>
+            <li>470	candle, taper, wax light</li>
+            <li>471	cannon</li>
+            <li>472	canoe</li>
+            <li>473	can opener, tin opener</li>
+            <li>474	cardigan</li>
+            <li>475	car mirror</li>
+            <li>476	carousel, carrousel, merry-go-round, roundabout, whirligig</li>
+            <li>477	carpenter's kit, tool kit</li>
+            <li>478	carton</li>
+            <li>479	car wheel</li>
+            <li>480	cash machine, cash dispenser, automated teller machine, automatic teller chine, automated teller, automatic teller, ATM',</li>
+            <li>481	cassette</li>
+            <li>482	cassette player</li>
+            <li>483	castle</li>
+            <li>484	catamaran</li>
+            <li>485	CD player</li>
+            <li>486	cello, violoncello</li>
+            <li>487	cellular telephone, cellular phone, cellphone, cell, mobile phone</li>
+            <li>488	chain</li>
+            <li>489	chainlink fence</li>
+            <li>490	chain mail, ring mail, mail, chain armor, chain armour, ring armor, ring mour',</li>
+            <li>491	chain saw, chainsaw</li>
+            <li>492	chest</li>
+            <li>493	chiffonier, commode</li>
+            <li>494	chime, bell, gong</li>
+            <li>495	china cabinet, china closet</li>
+            <li>496	Christmas stocking</li>
+            <li>497	church, church building</li>
+            <li>498	cinema, movie theater, movie theatre, movie house, picture palace</li>
+            <li>499	cleaver, meat cleaver, chopper</li>
+            <li>500	cliff dwelling</li>
+            <li>501	cloak</li>
+            <li>502	clog, geta, patten, sabot</li>
+            <li>503	cocktail shaker</li>
+            <li>504	coffee mug</li>
+            <li>505	coffeepot</li>
+            <li>506	coil, spiral, volute, whorl, helix</li>
+            <li>507	combination lock</li>
+            <li>508	computer keyboard, keypad</li>
+            <li>509	confectionery, confectionary, candy store</li>
+            <li>510	container ship, containership, container vessel</li>
+            <li>511	convertible</li>
+            <li>512	corkscrew, bottle screw</li>
+            <li>513	cornet, horn, trumpet, trump</li>
+            <li>514	cowboy boot</li>
+            <li>515	cowboy hat, ten-gallon hat</li>
+            <li>516	cradle</li>
+            <li>517	crane</li>
+            <li>518	crash helmet</li>
+            <li>519	crate</li>
+            <li>520	crib, cot</li>
+            <li>521	Crock Pot</li>
+            <li>522	croquet ball</li>
+            <li>523	crutch</li>
+            <li>524	cuirass</li>
+            <li>525	dam, dike, dyke</li>
+            <li>526	desk</li>
+            <li>527	desktop computer</li>
+            <li>528	dial telephone, dial phone</li>
+            <li>529	diaper, nappy, napkin</li>
+            <li>530	digital clock</li>
+            <li>531	digital watch</li>
+            <li>532	dining table, board</li>
+            <li>533	dishrag, dishcloth</li>
+            <li>534	dishwasher, dish washer, dishwashing machine</li>
+            <li>535	disk brake, disc brake</li>
+            <li>536	dock, dockage, docking facility</li>
+            <li>537	dogsled, dog sled, dog sleigh</li>
+            <li>538	dome</li>
+            <li>539	doormat, welcome mat</li>
+            <li>540	drilling platform, offshore rig</li>
+            <li>541	drum, membranophone, tympan</li>
+            <li>542	drumstick</li>
+            <li>543	dumbbell</li>
+            <li>544	Dutch oven</li>
+            <li>545	electric fan, blower</li>
+            <li>546	electric guitar</li>
+            <li>547	electric locomotive</li>
+            <li>548	entertainment center</li>
+            <li>549	envelope</li>
+            <li>550	espresso maker</li>
+            <li>551	face powder</li>
+            <li>552	feather boa, boa</li>
+            <li>553	file, file cabinet, filing cabinet</li>
+            <li>554	fireboat</li>
+            <li>555	fire engine, fire truck</li>
+            <li>556	fire screen, fireguard</li>
+            <li>557	flagpole, flagstaff</li>
+            <li>558	flute, transverse flute</li>
+            <li>559	folding chair</li>
+            <li>560	football helmet</li>
+            <li>561	forklift</li>
+            <li>562	fountain</li>
+            <li>563	fountain pen</li>
+            <li>564	four-poster</li>
+            <li>565	freight car</li>
+            <li>566	French horn, horn</li>
+            <li>567	frying pan, frypan, skillet</li>
+            <li>568	fur coat</li>
+            <li>569	garbage truck, dustcart</li>
+            <li>570	gasmask, respirator, gas helmet</li>
+            <li>571	gas pump, gasoline pump, petrol pump, island dispenser</li>
+            <li>572	goblet</li>
+            <li>573	go-kart</li>
+            <li>574	golf ball</li>
+            <li>575	golfcart, golf cart</li>
+            <li>576	gondola</li>
+            <li>577	gong, tam-tam</li>
+            <li>578	gown</li>
+            <li>579	grand piano, grand</li>
+            <li>580	greenhouse, nursery, glasshouse</li>
+            <li>581	grille, radiator grille</li>
+            <li>582	grocery store, grocery, food market, market</li>
+            <li>583	guillotine</li>
+            <li>584	hair slide</li>
+            <li>585	hair spray</li>
+            <li>586	half track</li>
+            <li>587	hammer</li>
+            <li>588	hamper</li>
+            <li>589	hand blower, blow dryer, blow drier, hair dryer, hair drier</li>
+            <li>590	hand-held computer, hand-held microcomputer</li>
+            <li>591	handkerchief, hankie, hanky, hankey</li>
+            <li>592	hard disc, hard disk, fixed disk</li>
+            <li>593	harmonica, mouth organ, harp, mouth harp</li>
+            <li>594	harp</li>
+            <li>595	harvester, reaper</li>
+            <li>596	hatchet</li>
+            <li>597	holster</li>
+            <li>598	home theater, home theatre</li>
+            <li>599	honeycomb</li>
+            <li>600	hook, claw</li>
+            <li>601	hoopskirt, crinoline</li>
+            <li>602	horizontal bar, high bar</li>
+            <li>603	horse cart, horse-cart</li>
+            <li>604	hourglass</li>
+            <li>605	iPod</li>
+            <li>606	iron, smoothing iron</li>
+            <li>607	jack-o'-lantern</li>
+            <li>608	jean, blue jean, denim</li>
+            <li>609	jeep, landrover</li>
+            <li>610	jersey, T-shirt, tee shirt</li>
+            <li>611	jigsaw puzzle</li>
+            <li>612	jinrikisha, ricksha, rickshaw</li>
+            <li>613	joystick</li>
+            <li>614	kimono</li>
+            <li>615	knee pad</li>
+            <li>616	knot</li>
+            <li>617	lab coat, laboratory coat</li>
+            <li>618	ladle</li>
+            <li>619	lampshade, lamp shade</li>
+            <li>620	laptop, laptop computer</li>
+            <li>621	lawn mower, mower</li>
+            <li>622	lens cap, lens cover</li>
+            <li>623	letter opener, paper knife, paperknife</li>
+            <li>624	library</li>
+            <li>625	lifeboat</li>
+            <li>626	lighter, light, igniter, ignitor</li>
+            <li>627	limousine, limo</li>
+            <li>628	liner, ocean liner</li>
+            <li>629	lipstick, lip rouge</li>
+            <li>630	Loafer</li>
+            <li>631	lotion</li>
+            <li>632	loudspeaker, speaker, speaker unit, loudspeaker system, speaker system</li>
+            <li>633	loupe, jeweler's loupe</li>
+            <li>634	lumbermill, sawmill</li>
+            <li>635	magnetic compass</li>
+            <li>636	mailbag, postbag</li>
+            <li>637	mailbox, letter box</li>
+            <li>638	maillot</li>
+            <li>639	maillot, tank suit</li>
+            <li>640	manhole cover</li>
+            <li>641	maraca</li>
+            <li>642	marimba, xylophone</li>
+            <li>643	mask</li>
+            <li>644	matchstick</li>
+            <li>645	maypole</li>
+            <li>646	maze, labyrinth</li>
+            <li>647	measuring cup</li>
+            <li>648	medicine chest, medicine cabinet</li>
+            <li>649	megalith, megalithic structure</li>
+            <li>650	microphone, mike</li>
+            <li>651	microwave, microwave oven</li>
+            <li>652	military uniform</li>
+            <li>653	milk can</li>
+            <li>654	minibus</li>
+            <li>655	miniskirt, mini</li>
+            <li>656	minivan</li>
+            <li>657	missile</li>
+            <li>658	mitten</li>
+            <li>659	mixing bowl</li>
+            <li>660	mobile home, manufactured home</li>
+            <li>661	Model T</li>
+            <li>662	modem</li>
+            <li>663	monastery</li>
+            <li>664	monitor</li>
+            <li>665	moped</li>
+            <li>666	mortar</li>
+            <li>667	mortarboard</li>
+            <li>668	mosque</li>
+            <li>669	mosquito net</li>
+            <li>670	motor scooter, scooter</li>
+            <li>671	mountain bike, all-terrain bike, off-roader</li>
+            <li>672	mountain tent</li>
+            <li>673	mouse, computer mouse</li>
+            <li>674	mousetrap</li>
+            <li>675	moving van</li>
+            <li>676	muzzle</li>
+            <li>677	nail</li>
+            <li>678	neck brace</li>
+            <li>679	necklace</li>
+            <li>680	nipple</li>
+            <li>681	notebook, notebook computer</li>
+            <li>682	obelisk</li>
+            <li>683	oboe, hautboy, hautbois</li>
+            <li>684	ocarina, sweet potato</li>
+            <li>685	odometer, hodometer, mileometer, milometer</li>
+            <li>686	oil filter</li>
+            <li>687	organ, pipe organ</li>
+            <li>688	oscilloscope, scope, cathode-ray oscilloscope, CRO</li>
+            <li>689	overskirt</li>
+            <li>690	oxcart</li>
+            <li>691	oxygen mask</li>
+            <li>692	packet</li>
+            <li>693	paddle, boat paddle</li>
+            <li>694	paddlewheel, paddle wheel</li>
+            <li>695	padlock</li>
+            <li>696	paintbrush</li>
+            <li>697	pajama, pyjama, pj's, jammies</li>
+            <li>698	palace</li>
+            <li>699	panpipe, pandean pipe, syrinx</li>
+            <li>700	paper towel</li>
+            <li>701	parachute, chute</li>
+            <li>702	parallel bars, bars</li>
+            <li>703	park bench</li>
+            <li>704	parking meter</li>
+            <li>705	passenger car, coach, carriage</li>
+            <li>706	patio, terrace</li>
+            <li>707	pay-phone, pay-station</li>
+            <li>708	pedestal, plinth, footstall</li>
+            <li>709	pencil box, pencil case</li>
+            <li>710	pencil sharpener</li>
+            <li>711	perfume, essence</li>
+            <li>712	Petri dish</li>
+            <li>713	photocopier</li>
+            <li>714	pick, plectrum, plectron</li>
+            <li>715	pickelhaube</li>
+            <li>716	picket fence, paling</li>
+            <li>717	pickup, pickup truck</li>
+            <li>718	pier</li>
+            <li>719	piggy bank, penny bank</li>
+            <li>720	pill bottle</li>
+            <li>721	pillow</li>
+            <li>722	ping-pong ball</li>
+            <li>723	pinwheel</li>
+            <li>724	pirate, pirate ship</li>
+            <li>725	pitcher, ewer</li>
+            <li>726	plane, carpenter's plane, woodworking plane</li>
+            <li>727	planetarium</li>
+            <li>728	plastic bag</li>
+            <li>729	plate rack</li>
+            <li>730	plow, plough</li>
+            <li>731	plunger, plumber's helper</li>
+            <li>732	Polaroid camera, Polaroid Land camera</li>
+            <li>733	pole</li>
+            <li>734	police van, police wagon, paddy wagon, patrol wagon, wagon, black Maria</li>
+            <li>735	poncho</li>
+            <li>736	pool table, billiard table, snooker table</li>
+            <li>737	pop bottle, soda bottle</li>
+            <li>738	pot, flowerpot</li>
+            <li>739	potter's wheel</li>
+            <li>740	power drill</li>
+            <li>741	prayer rug, prayer mat</li>
+            <li>742	printer</li>
+            <li>743	prison, prison house</li>
+            <li>744	projectile, missile</li>
+            <li>745	projector</li>
+            <li>746	puck, hockey puck</li>
+            <li>747	punching bag, punch bag, punching ball, punchball</li>
+            <li>748	purse</li>
+            <li>749	quill, quill pen</li>
+            <li>750	quilt, comforter, comfort, puff</li>
+            <li>751	racer, race car, racing car</li>
+            <li>752	racket, racquet</li>
+            <li>753	radiator</li>
+            <li>754	radio, wireless</li>
+            <li>755	radio telescope, radio reflector</li>
+            <li>756	rain barrel</li>
+            <li>757	recreational vehicle, RV, R.V.</li>
+            <li>758	reel</li>
+            <li>759	reflex camera</li>
+            <li>760	refrigerator, icebox</li>
+            <li>761	remote control, remote</li>
+            <li>762	restaurant, eating house, eating place, eatery</li>
+            <li>763	revolver, six-gun, six-shooter</li>
+            <li>764	rifle</li>
+            <li>765	rocking chair, rocker</li>
+            <li>766	rotisserie</li>
+            <li>767	rubber eraser, rubber, pencil eraser</li>
+            <li>768	rugby ball</li>
+            <li>769	rule, ruler</li>
+            <li>770	running shoe</li>
+            <li>771	safe</li>
+            <li>772	safety pin</li>
+            <li>773	saltshaker, salt shaker</li>
+            <li>774	sandal</li>
+            <li>775	sarong</li>
+            <li>776	sax, saxophone</li>
+            <li>777	scabbard</li>
+            <li>778	scale, weighing machine</li>
+            <li>779	school bus</li>
+            <li>780	schooner</li>
+            <li>781	scoreboard</li>
+            <li>782	screen, CRT screen</li>
+            <li>783	screw</li>
+            <li>784	screwdriver</li>
+            <li>785	seat belt, seatbelt</li>
+            <li>786	sewing machine</li>
+            <li>787	shield, buckler</li>
+            <li>788	shoe shop, shoe-shop, shoe store</li>
+            <li>789	shoji</li>
+            <li>790	shopping basket</li>
+            <li>791	shopping cart</li>
+            <li>792	shovel</li>
+            <li>793	shower cap</li>
+            <li>794	shower curtain</li>
+            <li>795	ski</li>
+            <li>796	ski mask</li>
+            <li>797	sleeping bag</li>
+            <li>798	slide rule, slipstick</li>
+            <li>799	sliding door</li>
+            <li>800	slot, one-armed bandit</li>
+            <li>801	snorkel</li>
+            <li>802	snowmobile</li>
+            <li>803	snowplow, snowplough</li>
+            <li>804	soap dispenser</li>
+            <li>805	soccer ball</li>
+            <li>806	sock</li>
+            <li>807	solar dish, solar collector, solar furnace</li>
+            <li>808	sombrero</li>
+            <li>809	soup bowl</li>
+            <li>810	space bar</li>
+            <li>811	space heater</li>
+            <li>812	space shuttle</li>
+            <li>813	spatula</li>
+            <li>814	speedboat</li>
+            <li>815	spider web, spider's web</li>
+            <li>816	spindle</li>
+            <li>817	sports car, sport car</li>
+            <li>818	spotlight, spot</li>
+            <li>819	stage</li>
+            <li>820	steam locomotive</li>
+            <li>821	steel arch bridge</li>
+            <li>822	steel drum</li>
+            <li>823	stethoscope</li>
+            <li>824	stole</li>
+            <li>825	stone wall</li>
+            <li>826	stopwatch, stop watch</li>
+            <li>827	stove</li>
+            <li>828	strainer</li>
+            <li>829	streetcar, tram, tramcar, trolley, trolley car</li>
+            <li>830	stretcher</li>
+            <li>831	studio couch, day bed</li>
+            <li>832	stupa, tope</li>
+            <li>833	submarine, pigboat, sub, U-boat</li>
+            <li>834	suit, suit of clothes</li>
+            <li>835	sundial</li>
+            <li>836	sunglass</li>
+            <li>837	sunglasses, dark glasses, shades</li>
+            <li>838	sunscreen, sunblock, sun blocker</li>
+            <li>839	suspension bridge</li>
+            <li>840	swab, swob, mop</li>
+            <li>841	sweatshirt</li>
+            <li>842	swimming trunks, bathing trunks</li>
+            <li>843	swing</li>
+            <li>844	switch, electric switch, electrical switch</li>
+            <li>845	syringe</li>
+            <li>846	table lamp</li>
+            <li>847	tank, army tank, armored combat vehicle, armoured combat vehicle</li>
+            <li>848	tape player</li>
+            <li>849	teapot</li>
+            <li>850	teddy, teddy bear</li>
+            <li>851	television, television system</li>
+            <li>852	tennis ball</li>
+            <li>853	thatch, thatched roof</li>
+            <li>854	theater curtain, theatre curtain</li>
+            <li>855	thimble</li>
+            <li>856	thresher, thrasher, threshing machine</li>
+            <li>857	throne</li>
+            <li>858	tile roof</li>
+            <li>859	toaster</li>
+            <li>860	tobacco shop, tobacconist shop, tobacconist</li>
+            <li>861	toilet seat</li>
+            <li>862	torch</li>
+            <li>863	totem pole</li>
+            <li>864	tow truck, tow car, wrecker</li>
+            <li>865	toyshop</li>
+            <li>866	tractor</li>
+            <li>867	trailer truck, tractor trailer, trucking rig, rig, articulated lorry, sem,</li>
+            <li>868	tray</li>
+            <li>869	trench coat</li>
+            <li>870	tricycle, trike, velocipede</li>
+            <li>871	trimaran</li>
+            <li>872	tripod</li>
+            <li>873	triumphal arch</li>
+            <li>874	trolleybus, trolley coach, trackless trolley</li>
+            <li>875	trombone</li>
+            <li>876	tub, vat</li>
+            <li>877	turnstile</li>
+            <li>878	typewriter keyboard</li>
+            <li>879	umbrella</li>
+            <li>880	unicycle, monocycle</li>
+            <li>881	upright, upright piano</li>
+            <li>882	vacuum, vacuum cleaner</li>
+            <li>883	vase</li>
+            <li>884	vault</li>
+            <li>885	velvet</li>
+            <li>886	vending machine</li>
+            <li>887	vestment</li>
+            <li>888	viaduct</li>
+            <li>889	violin, fiddle</li>
+            <li>890	volleyball</li>
+            <li>891	waffle iron</li>
+            <li>892	wall clock</li>
+            <li>893	wallet, billfold, notecase, pocketbook</li>
+            <li>894	wardrobe, closet, press</li>
+            <li>895	warplane, military plane</li>
+            <li>896	washbasin, handbasin, washbowl, lavabo, wash-hand basin</li>
+            <li>897	washer, automatic washer, washing machine</li>
+            <li>898	water bottle</li>
+            <li>899	water jug</li>
+            <li>900	water tower</li>
+            <li>901	whiskey jug</li>
+            <li>902	whistle</li>
+            <li>903	wig</li>
+            <li>904	window screen</li>
+            <li>905	window shade</li>
+            <li>906	Windsor tie</li>
+            <li>907	wine bottle</li>
+            <li>908	wing</li>
+            <li>909	wok</li>
+            <li>910	wooden spoon</li>
+            <li>911	wool, woolen, woollen</li>
+            <li>912	worm fence, snake fence, snake-rail fence, Virginia fence</li>
+            <li>913	wreck</li>
+            <li>914	yawl</li>
+            <li>915	yurt</li>
+            <li>916	web site, website, internet site, site</li>
+            <li>917	comic book</li>
+            <li>918	crossword puzzle, crossword</li>
+            <li>919	street sign</li>
+            <li>920	traffic light, traffic signal, stoplight</li>
+            <li>921	book jacket, dust cover, dust jacket, dust wrapper</li>
+            <li>922	menu</li>
+            <li>923	plate</li>
+            <li>924	guacamole</li>
+            <li>925	consomme</li>
+            <li>926	hot pot, hotpot</li>
+            <li>927	trifle</li>
+            <li>928	ice cream, icecream</li>
+            <li>929	ice lolly, lolly, lollipop, popsicle</li>
+            <li>930	French loaf</li>
+            <li>931	bagel, beigel</li>
+            <li>932	pretzel</li>
+            <li>933	cheeseburger</li>
+            <li>934	hotdog, hot dog, red hot</li>
+            <li>935	mashed potato</li>
+            <li>936	head cabbage</li>
+            <li>937	broccoli</li>
+            <li>938	cauliflower</li>
+            <li>939	zucchini, courgette</li>
+            <li>940	spaghetti squash</li>
+            <li>941	acorn squash</li>
+            <li>942	butternut squash</li>
+            <li>943	cucumber, cuke</li>
+            <li>944	artichoke, globe artichoke</li>
+            <li>945	bell pepper</li>
+            <li>946	cardoon</li>
+            <li>947	mushroom</li>
+            <li>948	Granny Smith</li>
+            <li>949	strawberry</li>
+            <li>950	orange</li>
+            <li>951	lemon</li>
+            <li>952	fig</li>
+            <li>953	pineapple, ananas</li>
+            <li>954	banana</li>
+            <li>955	jackfruit, jak, jack</li>
+            <li>956	custard apple</li>
+            <li>957	pomegranate</li>
+            <li>958	hay</li>
+            <li>959	carbonara</li>
+            <li>960	chocolate sauce, chocolate syrup</li>
+            <li>961	dough</li>
+            <li>962	meat loaf, meatloaf</li>
+            <li>963	pizza, pizza pie</li>
+            <li>964	potpie</li>
+            <li>965	burrito</li>
+            <li>966	red wine</li>
+            <li>967	espresso</li>
+            <li>968	cup</li>
+            <li>969	eggnog</li>
+            <li>970	alp</li>
+            <li>971	bubble</li>
+            <li>972	cliff, drop, drop-off</li>
+            <li>973	coral reef</li>
+            <li>974	geyser</li>
+            <li>975	lakeside, lakeshore</li>
+            <li>976	promontory, headland, head, foreland</li>
+            <li>977	sandbar, sand bar</li>
+            <li>978	seashore, coast, seacoast, sea-coast</li>
+            <li>979	valley, vale</li>
+            <li>980	volcano</li>
+            <li>981	ballplayer, baseball player</li>
+            <li>982	groom, bridegroom</li>
+            <li>983	scuba diver</li>
+            <li>984	rapeseed</li>
+            <li>985	daisy</li>
+            <li>986	yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripium parviflorum",</li>
+            <li>987	corn</li>
+            <li>988	acorn</li>
+            <li>989	hip, rose hip, rosehip</li>
+            <li>990	buckeye, horse chestnut, conker</li>
+            <li>991	coral fungus</li>
+            <li>992	agaric</li>
+            <li>993	gyromitra</li>
+            <li>994	stinkhorn, carrion fungus</li>
+            <li>995	earthstar</li>
+            <li>996	hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa</li>
+            <li>997	bolete</li>
+            <li>998	ear, spike, capitulum</li>
+            <li>999	toilet tissue, toilet paper, bathroom tissue</li>
+        </ul>
+
+        The actual categorisation of images is often incorrect as you can see below. 
+        <img src="assets/tsne/erode_2022-08-21_1650___ERODE___11A___RAVIVARMA STUDIO___ERODE_11A_RAVIVARMA STUDIO_2016_00001.nef.jpg"/>
+        <ul>
+            <li><em>predicted kimono with probability 0.835</em></li>
+            <li><em>predicted sarong with probability 0.058</em></li>
+            <li><em>predicted theater_curtain with probability 0.022</em></li>
+            <li><em>predicted vestment with probability 0.014</em></li>
+            <li><em>predicted pajama with probability 0.013</em></li>
+        </ul>
+        <p>
+        This could be because the labels aren't necessarily relevant to these types of images. For example, we'd probably never see a <em>European Fire Salamander (category id 25)</em> in these images, but a category like <em>bottu</em> or <em>bindi</em> would've been helpful and <em>kimono (category id 614)</em> is probably the closest we can get to something like <em>saree.</em> We also should remember that these images are quite different from the mostly born-digital images of the Imagenet database. 
+        </p>
+        <p>Instead of having the model classify the images from stars using these categories, I am interested in something called <em>embedding</em>. Before the model assigns labels from the 1000 categories to the images, it creates a unique series of numbers (an embedding), for each image that it later uses to classify it. This embedding is a mathematical representation of the image. The method by which the model assigns numerical values to parts of the image is something that is tweaked and optimized over time by researchers until the predictions become more and more "accurate" in the tests that are run. Similar images, in theory, should have embeddings that are closer in value. For example, the difference between embeddings for two images of men wearing ties should be less than an embedding for an image of a man wearing a tie and an embedding for an image of a firetruck. </p>
+        <p>So in some respects, it doesn't matter how incorrect the labels are as long as similar images get similar embeddings in the process before the categorisation happens.</p>
+
+For example, the embedding for this image:<br>
+<img src="assets/tsne/miscellaneous_m8_2015_00007-xmp_2022-08-23_1430___MISCELLANEOUS_M8_2015_00037.nef.jpg"/><br>
+is:
+<div id="embedding">
+    [ 1.91794758e+01  2.45684185e+01 -1.48634014e+01  1.00456610e+01
+    1.23722658e+01  3.67962575e+00  1.86768460e+00 -5.08265734e+00
+    2.82952571e+00 -1.82983720e+00 -1.37407389e+01  1.27371275e+00
+   -2.83554959e+00  1.48696537e+01 -9.56767321e-01  1.30410614e+01
+    1.56107402e+00 -5.20693350e+00  6.45998001e+00 -4.87222195e+00
+    4.18484402e+00  2.02562189e+00  1.62268889e+00  6.55196619e+00
+   -3.79729223e+00  9.08865213e-01 -4.80334014e-01  3.64598536e+00
+    2.87132716e+00  1.45120323e-02 -1.86411238e+00  2.61045027e+00
+    1.78066015e+00  2.33796835e+00 -1.94519413e+00 -1.07703531e+00
+    7.75017262e-01  1.07955289e+00 -3.98576546e+00  9.80376065e-01
+    5.26948977e+00  2.49461865e+00  2.67107844e+00  3.21161079e+00
+    2.43223262e+00  1.71105647e+00  2.77814841e+00 -1.22377649e-01
+   -5.11695576e+00 -4.16733980e+00 -2.58463597e+00  3.96219110e+00
+   -1.90711915e+00  2.47059897e-01 -2.32500839e+00 -1.60414040e-01
+   -5.07035303e+00  2.42650795e+00 -3.34037542e-01  1.68242824e+00
+    5.26408195e-01 -2.52320242e+00 -8.63885343e-01  1.78900170e+00
+   -1.23478949e+00  5.99599659e-01  3.45318055e+00 -2.19646502e+00
+    5.45571625e-01  2.45045096e-01 -2.75517106e+00 -1.44544095e-01
+   -8.69867802e-01 -1.63786530e+00 -1.37256712e-01 -4.81543827e+00
+   -2.63040376e+00  2.89736366e+00  4.22516489e+00  8.83858562e-01
+    4.44634581e+00  3.95269275e+00 -6.53525293e-01 -6.16135776e-01
+   -2.35084200e+00 -2.76584029e-02  6.25337064e-01  1.61569691e+00
+   -8.54805112e-01  1.72879767e+00 -3.45003515e-01  2.26746488e+00
+    4.09944773e+00  2.24842310e+00  3.15522969e-01 -6.14471555e-01
+   -2.87589818e-01  3.92144263e-01  2.94887733e+00 -1.43602991e+00
+   -1.35511529e+00 -1.95796967e+00  1.34478807e+00 -2.93180680e+00
+   -1.86152124e+00 -2.01161075e+00  4.60683680e+00  1.30669916e+00
+    1.25809121e+00 -2.18553036e-01  8.61385822e-01  1.95201397e+00
+    3.50504255e+00  7.50711799e-01 -2.04655600e+00 -9.43926513e-01
+    4.96668756e-01  1.10160053e-01  3.54241967e-01  9.09713864e-01
+    2.38036990e+00 -1.31741774e+00 -2.44925737e+00  1.64631522e+00
+    1.11341393e+00  1.35700965e+00 -1.38343012e+00  4.72699106e-01
+    4.72502738e-01  2.89054537e+00  2.44591951e-01 -3.90299439e-01
+   -6.78489387e-01  2.36203742e+00 -1.68411446e+00 -8.83051515e-01
+   -2.78843880e-01 -2.56786275e+00 -1.00011373e+00  1.04334641e+00
+   -4.61221159e-01  3.97799224e-01  9.04500484e-04  1.60928559e+00
+   -2.47642875e+00  1.29292533e-01  7.82566145e-02 -8.67262840e-01
+    5.52608311e-01  3.39104271e+00 -8.92583787e-01  2.21043205e+00
+   -1.06479669e+00 -5.92290044e-01 -1.02788627e-01  9.00046885e-01
+   -2.02432442e+00 -2.95873284e-02  1.08827424e+00 -6.82543874e-01
+    5.28323352e-01 -2.82444894e-01 -3.99644554e-01 -1.87972867e+00
+   -6.41972721e-01 -1.41761875e+00 -1.04742336e+00  4.30806786e-01
+   -6.55426145e-01 -4.04562056e-03 -5.76043725e-01 -4.61630583e-01
+   -4.09543514e-01  3.32864904e+00  1.22535360e+00  3.17406297e+00
+    6.27566218e-01  4.49247241e-01 -8.92385483e-01  6.72171295e-01
+   -3.64607871e-01 -8.71325195e-01 -6.57851756e-01 -1.02997088e+00
+   -1.42854404e+00 -7.70915031e-01 -6.37771368e-01 -4.93319094e-01
+    3.81817371e-01 -5.55320323e-01 -2.09226227e+00 -7.80385435e-01
+   -1.67794597e+00 -4.49801832e-01 -6.85872793e-01  2.21424580e+00
+    4.23316479e+00 -6.19300008e-01  1.86850464e+00 -3.34484614e-02
+    3.88091350e+00 -2.42278114e-01  6.84221506e-01 -8.82503688e-01
+    2.12381554e+00  8.49718750e-01 -2.18842477e-01 -6.81617916e-01
+   -2.72165871e+00  5.63951731e-01  1.34849000e+00  7.51719236e-01
+   -1.12067580e+00  1.74883485e+00  1.72191286e+00  9.62925732e-01
+    4.30905968e-01  2.55084777e+00  2.16137981e+00  9.20611978e-01
+   -7.78484702e-01  9.10550475e-01  7.25476146e-01 -2.22245902e-01
+   -2.53118634e-01  4.85176146e-01 -5.03149629e-01  1.59352708e+00
+    1.73332858e+00 -1.19019949e+00  4.07134265e-01 -1.17331676e-01
+    2.63678288e+00 -9.51610267e-01 -9.12574768e-01 -7.83781767e-01
+   -1.06167269e+00 -4.37193990e-01 -5.36050856e-01  6.24245703e-01
+   -3.14469635e-02 -2.35921097e+00  1.75781369e+00 -9.93272722e-01
+   -1.51024699e+00 -1.61797667e+00  1.11819232e+00  3.06039572e-01
+   -1.61693978e+00  3.64957690e-01  4.65739518e-01  7.12308809e-02
+    1.37075335e-02 -6.52577877e-01  1.46927685e-02 -1.13664818e+00
+    2.54228055e-01  1.05104399e+00  4.17230837e-02  7.13630170e-02
+    1.21708453e+00  9.03380990e-01 -8.21467116e-02 -7.59055734e-01
+   -3.96756232e-01 -1.06059361e+00  9.26356852e-01 -2.47443207e-02
+   -1.37211287e+00 -5.55631638e-01 -1.09995258e+00  9.90472436e-02
+   -1.16855562e+00 -3.36859494e-01 -4.77764785e-01  1.14232063e+00
+   -2.68011713e+00  2.02437788e-01  1.65829599e+00  8.72483909e-01
+   -3.99105817e-01  4.87966716e-01 -1.04135334e-01 -1.77713990e-01
+    6.71906590e-01  1.76185417e+00  3.88295412e-01 -1.08416092e+00
+    9.82434750e-02 -3.77404451e-01 -2.53587574e-01  1.14483452e+00
+   -9.93044376e-01  1.16938555e+00  4.82089259e-02  5.48468471e-01
+    1.48385793e-01 -4.37964976e-01 -3.75440359e-01 -5.34462452e-01]
+</div>
+<br>
+The embedding for this image <br>
+<img src="assets/tsne/miscellaneous_m8_2015_00007-xmp_2022-08-23_1430___MISCELLANEOUS_M8_2015_00041.nef.jpg"/><br>
+is:
+<div id="embedding">
+    [ 1.39509230e+01  1.57726021e+01 -1.39290342e+01  1.53334646e+01
+    1.88452137e+00 -8.16810894e+00  2.29300952e+00 -1.72023892e+00
+    5.74233770e+00 -7.48942995e+00 -1.37936316e+01  4.39429283e-02
+   -3.44045138e+00  9.43470573e+00  4.76403093e+00  1.45046339e+01
+    7.12236091e-02  1.43390208e-01  5.68005514e+00 -1.48921275e+00
+    1.46231210e+00  2.20108795e+00  7.35101759e-01  1.14242649e+00
+   -1.91482663e+00 -2.41836381e+00  7.03861237e+00  5.00103569e+00
+    4.17246675e+00  5.65432596e+00 -5.29990768e+00 -3.74641800e+00
+    4.68931627e+00 -1.25669646e+00 -4.84356451e+00 -1.92194963e+00
+    1.13912916e+00 -3.63552499e+00 -3.31987286e+00 -1.95919001e+00
+   -7.68998504e-01  4.78142738e+00  3.70770311e+00 -1.76924789e+00
+    3.50682306e+00 -6.87864721e-01  1.84991884e+00  1.37862384e+00
+   -2.10066748e+00 -7.68206954e-01 -9.06196296e-01 -4.01076889e+00
+   -2.59839535e+00  2.32850626e-01 -1.00757694e+00 -1.20353532e+00
+   -2.06982851e+00 -1.78817451e+00  1.58575892e+00  3.17387283e-01
+   -4.46884155e+00  3.97757292e-01 -2.68035591e-01 -3.34565687e+00
+    7.80928671e-01 -1.53702700e+00  2.37716842e+00  9.92273390e-01
+    2.08555889e+00 -3.00560594e+00 -3.57237172e+00  1.41698670e+00
+   -1.95569432e+00  4.26490784e-01 -1.63480723e+00 -2.27633381e+00
+   -8.08896601e-01  4.04194266e-01  4.05652905e+00 -1.12160891e-01
+   -1.45051014e+00 -1.78686154e+00  8.09084535e-01  1.77147672e-01
+    9.33111548e-01  1.07338572e+00  8.99628341e-01 -1.84138298e+00
+   -3.51665109e-01 -7.59162664e-01 -1.08349502e+00 -1.03144896e+00
+    2.89804316e+00  2.60064363e+00  4.09009123e+00 -8.09401155e-01
+   -4.56716156e+00 -4.50304747e-01 -1.42174351e+00 -2.19219351e+00
+   -2.04563469e-01  1.86300039e+00  3.20406938e+00  1.44611990e+00
+    1.61961150e+00 -2.05519319e+00  2.30542397e+00 -1.60238683e+00
+    4.89198089e-01 -1.74054217e+00 -6.79731548e-01  7.04344213e-01
+    9.44294155e-01  1.16075671e+00 -2.04535395e-01  4.49702215e+00
+    2.05011159e-01 -5.03859967e-02  9.97282386e-01  6.58375025e-02
+   -1.38229835e+00  4.49326247e-01 -2.67472804e-01 -3.04264218e-01
+   -8.39258730e-01  1.05518758e-01  4.11018580e-01  2.12912291e-01
+    6.66252255e-01  6.46552503e-01 -1.41004014e+00  2.73475707e-01
+    4.26153511e-01  9.68831778e-01 -1.07074946e-01  6.70713663e-01
+    5.41332364e-01 -9.55132484e-01  7.26018012e-01  1.90517890e+00
+   -1.35173416e+00 -1.90488720e+00  1.67615068e+00  1.46352148e+00
+    1.33349013e+00  3.54355633e-01  4.60074931e-01 -7.83267021e-01
+    7.80422926e-01 -2.09911942e-01 -1.23356327e-01  1.32152081e+00
+   -1.29597366e+00 -2.04120541e+00  1.36339259e+00 -3.81184518e-02
+   -1.10634100e+00 -3.82290572e-01 -1.17844427e+00  3.03505182e+00
+   -5.04788041e-01 -4.21788096e-01 -1.53143871e+00 -9.80525732e-01
+    2.65300369e+00 -1.15192771e-01  9.97484922e-01  5.00579476e-02
+    5.76818645e-01  1.00528097e+00 -2.24905670e-01 -1.49113774e+00
+    2.68705726e-01  2.85539556e+00 -3.98975879e-01 -1.57772756e+00
+    1.93733072e+00 -1.19273293e+00  2.10888028e+00  1.46575105e+00
+    1.49359614e-01 -1.72821856e+00  1.80095822e-01  1.33534026e+00
+   -4.83725339e-01 -4.43692833e-01  4.74454701e-01 -7.04340696e-01
+   -1.73896566e-01  6.39160514e-01 -6.68460190e-01 -6.77079976e-01
+    9.32900429e-01  9.56034482e-01  3.12611163e-01  5.79683602e-01
+    1.82459641e+00 -6.77413166e-01  6.85611844e-01 -4.84373599e-01
+   -1.46384373e-01 -2.86526471e-01  4.21394289e-01 -5.28891742e-01
+   -3.02784353e-01 -7.52703846e-01  1.42143500e+00 -2.01210904e+00
+   -2.75162548e-01 -3.70684683e-01 -5.36288381e-01  2.12948847e+00
+    1.65410280e+00  1.56391427e-01  6.66792512e-01  2.68948138e-01
+   -1.29685390e+00 -1.46059543e-02 -1.59904373e+00  2.95166016e-01
+   -9.25642550e-01 -9.10231411e-01  2.58096278e-01  1.18902540e+00
+   -8.23410302e-02  1.15398794e-01  2.87378252e-01  1.49307108e+00
+   -4.62432086e-01 -1.20593572e+00  5.06623328e-01 -1.50804833e-01
+   -1.56888410e-01  1.27353773e-01 -1.37721586e+00 -1.26553357e+00
+    5.87539673e-01 -1.12404859e+00  1.21043909e+00  1.19625163e+00
+   -1.21831465e+00 -2.36697912e-01  4.14913952e-01 -6.80861592e-01
+    3.07412148e-02  5.09652257e-01 -1.71673745e-01 -6.43420637e-01
+   -9.84362006e-01 -9.74100649e-01  2.35690176e-02  1.47413343e-01
+   -1.40842330e+00  8.99301171e-01 -2.12456799e+00  4.25302416e-01
+   -3.00494224e-01  8.08667421e-01 -2.70122814e+00 -2.07691050e+00
+   -9.61755514e-01 -6.22252047e-01  6.28189683e-01 -6.53336287e-01
+   -1.82604864e-01 -8.48317742e-01 -2.17714801e-01 -1.04423857e+00
+   -3.50459218e-01  2.08377004e+00 -5.58921814e-01  2.73671418e-01
+    1.57726455e+00  1.26133990e+00 -6.70335472e-01  1.36419249e+00
+    9.39889550e-01  5.56972623e-01 -4.83564526e-01  8.68434906e-01
+   -5.11888713e-02 -7.79513896e-01  1.09836310e-01 -8.08777660e-02
+    8.07954490e-01 -1.13288558e+00  8.39772463e-01  7.30755866e-01
+   -1.61235243e-01 -1.56402171e-01  1.93634421e-01  2.00064874e+00
+   -5.93690991e-01 -1.79873213e-01  1.92424357e+00  6.48455679e-01
+   -1.77089557e-01 -5.82734048e-01 -9.92835402e-01  1.03992963e+00]
+</div>
+
+The distance between these two embeddings (using <a href='https://en.wikipedia.org/wiki/Cosine_similarity'>Cosine Similarity</a>, a mathematical method of measuring similarity between two sets of numbers) is 0.33302491903305054.<br><br>
+Whereas, if we compare the embedding for the first image and the one for this image:<br>
+<img src="assets/tsne/miscellaneous_m8_2015_00007-xmp_2022-08-23_1430___MISCELLANEOUS_M8_2015_00042.nef.jpg"/>
+<br>
+The distance between the embeddings is much higher at 1.0102533549070358.
+<br>
+<p>
+ Using these calculations, we can arrange all the images according to similarity as with the grid you see in the background. Looking at this grid, I intuitively started to map out groupings I saw. For example, I saw close-cropped portraits of men, or images with large standing mirrors. I also tried to value meaning over the numbers of images within a cluster. Even though there might've been fewer images in a grouping, if that group of images illustrated a cultural aspect I wanted to give space to, such as the images with standing mirrors that reveal the intricate stitching of flowers into a woman's hair, I included it as a cluster.</p>
+
+
+
     </div>
     <div id="grid">
 
