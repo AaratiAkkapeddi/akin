@@ -372,6 +372,18 @@ h1{
     position: relative;
     margin:50px;
 }
+#history-icon::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  #history-icon::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+#history-icons::-webkit-scrollbar-thumb {
+    background-color: black;
+    outline: 1px solid black;
+  }
 @media (max-width:900px) {
     #clusters{
         display: none;
