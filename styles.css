@@ -351,9 +351,36 @@ h1{
         margin-top:3em;
     }
 }
+#grid img{
+    cursor: pointer;
+}
+.grid-intro.intro{
+    top: 50px;
+    left:50px;
+    max-width: 80vw;
+    position: fixed;
+    z-index: 3;
+    padding:25px;
+    background: #171718cf;
+}
+#grid img:hover{
+  transform-origin: center;
+  transform: scale(3);
+  z-index: 2;
+}
+#grid{
+    position: relative;
+    margin:50px;
+}
 @media (max-width:900px) {
     #clusters{
         display: none;
+    }
+    .grid-intro.intro{
+        top: 20px;
+        left:10px;
+        max-width: 80vw;
+        padding:10px;
     }
     #two #wrapper img{
         width:auto;
