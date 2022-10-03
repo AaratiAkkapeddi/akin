@@ -1,5 +1,5 @@
 body{
-    background-color: #171718;
+    background-color: #101010;
     color: whitesmoke;
     font-family: Arial, sans-serif;
     font-size: 18px;
@@ -67,6 +67,11 @@ nav a{
 }
 nav a:hover{
     opacity: 0.8;
+    filter: sepia(1);
+}
+p a:hover{
+    opacity: 0.8;
+    filter: sepia(1);
 }
 #instructions{
     position: relative;
@@ -80,6 +85,8 @@ nav a:hover{
     width:calc(20% + 15px);
     display: inline-block;
 }
+
+
 #outer{
     margin-top:50px;
 }
@@ -222,9 +229,10 @@ h1{
 
 #clusters {
     flex-wrap: wrap;
-    background-image:url("assets/map-smaller.png");
+    background-image:url("assets/finalized.jpg");
     padding:0;
     background-size:99%;
+    background-position: 0;
     background-repeat: no-repeat;
     height: calc(100vw/ 2.16684723727);
 }
@@ -235,6 +243,7 @@ h1{
     margin:0;
     height: calc((100vw / 2.16684723727)/3);
     display:inline-block;
+    max-height: none;
 }
 .kolam{
     vertical-align: middle;
@@ -281,12 +290,16 @@ nav a:first-child{
 #clusters > a{
     background-color: rgba(245,245,245,1);
     mix-blend-mode: color;
+    max-height: none;
 }
 #clusters > a:hover{
    mix-blend-mode: normal;
    background-color: transparent;
 }
-
+#clusters > a.tsne.hovered{
+    mix-blend-mode: normal;
+    background-color: transparent;
+ }
 #instructions-clusters {
     text-align: center;
     margin-top:0;
