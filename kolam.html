@@ -25,14 +25,6 @@
         <a href="./categorisation.html">Categorisation</a>
         <a href="./credits.html">Credits</a>
     </nav>
-    <div id="modal">
-        <div class="inner">
-        <img id='close' src="assets/close.svg"/>
-        <p>
-        <strong>A·kin</strong> is a project by <a href="https://aarati.online">Aarati Akkapeddi</a> exploring human and non-human categorisation of photographic archives. The work highlights issues in grasping anthropological, historical and cultural notions about personal and collective identity when photographs are considered as mere data points.
-        </p>
-        </div>
-    </div>
     <div class="cluster-map" id="outer"> 
         <div id="clusters">
             <a class="tsne" href='./tsne.html'></a><a class="tsne" href='./tsne.html'></a><a href="./cluster_12.html"></a><a href="./cluster_1.html"></a><a href="./cluster_9.html"></a><a class="tsne" href='./tsne.html'></a><a class="tsne" href='./tsne.html'></a><a href="./cluster_8.html"></a><a href="./cluster_3.html"></a><a href="./cluster_2.html"></a><p id="instructions-clusters"><span>Select a Cluster to explore its individual photographs.</span></p><a href="./cluster_7.html"></a><a href="./cluster_6.html"></a><a href="./cluster_4.html"></a><a class="tsne" href='./tsne.html'></a><a class="tsne" href='./tsne.html'></a><a href="./cluster_11.html"></a><a href="./cluster_5.html"></a><a href="./cluster_10.html"></a><a class="tsne" href='./tsne.html'></a><a class="tsne" href='./tsne.html'></a>
@@ -72,9 +64,6 @@
                 document.getElementById("instructions-clusters").innerHTML = "<span>Select a Cluster to explore its individual photographs.</span>";
         })
        }
-       document.querySelector("#modal").addEventListener("click",function(){
-        document.querySelector("#modal").classList.add("closed");
-       })
     </script>
     <script>
         document.querySelector("#mobile-nav-trigger").addEventListener("click", function(){
@@ -86,7 +75,7 @@
         })
       </script>
     <script src="https://unthinking.photography/assets/affiliate/affiliate.js"
- id="utp" data-utp-url="https://unthinking.photography/articles/akin"
- data-utp-pos=“top"></script>
+    id="utp" data-utp-url="https://unthinking.photography/articles/akin"
+    data-utp-pos=“top"></script>
 </body>
 </html>

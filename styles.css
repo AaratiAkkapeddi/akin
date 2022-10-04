@@ -14,7 +14,48 @@ body{
 #text{
     position:relative;
 }
+#modal{
+    position: fixed;
+    overflow: scroll;
+    height:90%;
+    background-color: #101010cf;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 8;
+    flex-direction: column;
+}
+#modal .inner{
+    max-width: 600px;
+    padding:25px;
+    position:relative;
+    font-size: 20px;
+    background-color: #101010;
+}
+#modal::before{
+    background-color: #10101034;
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    cursor: pointer;
+    width:100vw;
+}
 
+#modal #close{
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    right:15px;
+    top:15px;
+    cursor: pointer;
+}
+#modal.closed{
+    display: none;
+}
 #text::before,nav::before, #history::before{
     background-color: #101010cf;
     position: absolute;
@@ -86,7 +127,26 @@ p a:hover{
     display: inline-block;
 }
 
-
+#mobile-nav{
+    display: none;
+}
+#mobile-nav{
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+    z-index: 8;
+}
+#mobile-nav.open{
+    opacity: 1;
+    pointer-events: all;
+}
+#mobile-nav-trigger{
+    z-index: 9999;
+    display: none;
+    position: fixed;
+    left:10px;
+    top:10px;
+}
 #outer{
     margin-top:50px;
 }
@@ -603,5 +663,17 @@ nav a:first-child{
         margin-right:0;
         margin-top:5px;
     }
-
+    #desktop-nav{
+        display: none;
+    }
+    #mobile-nav{
+        display: flex;
+        padding-left:75px;
+        padding-top:20px;
+        padding-bottom:20px;
+        flex-direction: column;
+    }
+    #mobile-nav-trigger{
+        display: block;
+    }
 }

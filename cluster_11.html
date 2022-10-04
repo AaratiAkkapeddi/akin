@@ -12,11 +12,20 @@
 
 <body>
     <div id="loader" class="on"><p>loading...</p></div>
-    <nav>
-        <a href="./"><img class='kolam' src="./kolam.svg"></a>
+    <nav id="desktop-nav">
+        <a href="./kolam.html"><img class='kolam' src="./kolam.svg"></a>
         <a href="./about.html">About</a>
         <a href="./video.html">Video</a>
-        <a href="./tsne.html">Categorisation</a>
+        <a href="./categorisation.html">Categorisation</a>
+        <a href="./credits.html">Credits</a>
+    </nav>
+    <img id="mobile-nav-trigger" class='kolam' src="./kolam.svg">
+    <nav id="mobile-nav">
+        <a href="./kolam.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./video.html">Video</a>
+        <a href="./categorisation.html">Categorisation</a>
+        <a href="./credits.html">Credits</a>
     </nav>
     <div id="outer">
     <p id="instructions">
@@ -36,7 +45,17 @@
     </div>
     <script src="./p5.min.js"></script>
     <script src="./11.js"></script>
+    <script>
+        document.querySelector("#mobile-nav-trigger").addEventListener("click", function(){
+          if(document.querySelector("#mobile-nav").classList.contains("open")){
+              document.querySelector("#mobile-nav").classList.remove("open")
+          }else{
+              document.querySelector("#mobile-nav").classList.add("open")
+          }
+        })
+      </script>
     <script src="https://unthinking.photography/assets/affiliate/affiliate.js"
- id="utp" data-utp-url="https://unthinking.photography/articles/akin" data-utp-pos="bottom"></script>
+ id="utp" data-utp-url="https://unthinking.photography/articles/akin"
+ data-utp-pos=“top"></script>
 </body>
 </html>

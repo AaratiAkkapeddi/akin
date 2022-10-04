@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A·kin</title>
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <a href="./kolam.html"><img class='kolam' src="./kolam.svg"></a>
+        <a href="./about.html">About</a>
+        <a href="./video.html">Video</a>
+        <a href="./categorisation.html">Categorisation</a>
+        <a href="./credits.html">Credits</a>
+    </nav>
+    <img id="mobile-nav-trigger" class='kolam' src="./kolam.svg">
+    <nav id="mobile-nav">
+        <a href="./kolam.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./video.html">Video</a>
+        <a href="./categorisation.html">Categorisation</a>
+        <a href="./credits.html">Credits</a>
+    </nav>
+    <div id="outer">
+        <div class="intro">
+            <br>
+            <p>We invite you to <a style="margin-top:0;" href="mailto:aarati.akkapeddi@gmail.com">get in touch</a> to share additional information, send any question or request the removal of images of loved ones.
+            </p>
+            <p>A list of all the photography studios can be found <a style="margin-top:0;" href="/studios.html">here</a>.</p>
+            <p><em>A·kin is a project by <a href='https://aarati.online'>Aarati Akkapeddi</a> in collaboration with <a href='https://stars.hypotheses.org/'>stars.archive</a>, and commissioned by <a href='https://thephotographersgallery.org.uk/'>The Photographers’ Gallery.</a></em>
+            </p>
+            <p>Neuronal Network Model: <a href="https://arxiv.org/abs/1409.1556">VGG-16</a> by Karen Simonyan and Andrew Zisserman at the University of Oxford.
+                <br>Risograph Printing: <a href="https://earthbound.press/">Earthbound Press</a>
+
+            </p>
+            <p>Thank you to interviewees Suseela Ramavarapu, Seetharam Ramavarapu, Sreenivas Ramavarapu, Sudha Akkapeddi, and Zoé Headley.</p>
+            <p>Featured Tamil photography studios:<br>
+                <ul>
+                    <li>Guhan Studio, Adyar, Chennai</li>
+                    <li>Bhaskar Photo Studio, Vizianagram -- Andhra *(Akkapeddi’s family is Telugu so a few family photos were taken in the neighboring state of Andhra Pradesh rather than Tamil Nadu)</li>
+                    <li>City Camera House, Coimbatore</li>
+                    <li>Crown Studio, Coimbatore</li>
+                    <li>Raju's Studio, Coimbatore</li>
+                    <li>Seenu Studio, Coimbatore</li>
+                    <li>Ramu Studio, Coimbatore</li>
+                    <li>The City Photo Works Studio, Coimbatore</li>
+                    <li>Prince Studio, Coimbatore</li>
+                    <li>Balu Art Studio, Erode</li>
+                    <li>Metro Studio, Erode</li>
+                    <li>Sundram Studio, Karaikudi</li>
+                    <li>R. Dasen Studio, Karaikudi</li>
+                    <li>Victoria Studio, Madurai</li>
+                    <li>Tamilnadu Studio, Madurai</li>
+                    <li>New Studio, Madurai</li>
+                    <li>Lakshmi Studio, Mayiladuthurai</li>
+                    <li>G.V. Naidu & Sons Studio, Nagapattinam</li>
+                    <li>Rani Studio, Pattukkottai</li>
+                    <li>Thangam Studio, Pattukkottai</li>
+                    <li>Sri Devi Studio, Pattukkottai</li>
+                    <li>Raju's Electric Studio, Pollachi</li>
+                    <li>Ponnaiah Studio, Pollachi</li>
+                    <li>Leo Photo Works Studio, Pondicherry/Puducherry</li>
+                    <li>Omni Photo Studio, Pondicherry/Puducherry</li>
+                    <li>Star Photo Studio, Pondicherry/Puducherry</li>
+                    <li>C.P. Studio, Thanjavur</li>
+                    <li>G.P. Swami Studio,Thanjavur</li>
+                    <li>V.Y.A.S. Studio, Thanjavur</li>
+                    <li>Muthuvel Studio, Thanjavur</li>
+                    <li>Navakodi Studio, Thanjavur</li>
+                    <li>Everest Studio, Thanjavur</li>
+                    <li>Navajeevan Studio, Theni</li>
+                    <li>Vijaya Bharathi Studio, Theni</li>
+                    <li>Newtone Studio, Thoothukudi</li>
+                    <li>Imperial Studio, Thoothukudi</li>
+                    <li>Mahadev Bros Studio, Tiruppur</li>
+                    <li>Shanthi Studio, Ulundurpet</li>
+                    <li>Venus Studio, Ulundurpet</li>
+                    <li>Chitra Studio, Viluppuram</li>
+                 </ul>
+            </p>
+            <br>
+        </div>
+    </div>
+    <script>
+        document.querySelector("#mobile-nav-trigger").addEventListener("click", function(){
+          if(document.querySelector("#mobile-nav").classList.contains("open")){
+              document.querySelector("#mobile-nav").classList.remove("open")
+          }else{
+              document.querySelector("#mobile-nav").classList.add("open")
+          }
+        })
+      </script>
+    <script src="https://unthinking.photography/assets/affiliate/affiliate.js"
+ id="utp" data-utp-url="https://unthinking.photography/articles/akin"
+ data-utp-pos=“top"></script>
+</body>
+</html>
