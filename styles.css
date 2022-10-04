@@ -259,6 +259,9 @@ h1{
     #two #wrapper img{
         left: 500px;
     }
+    #instructions-clusters span{
+        margin-top:8em;
+    }
 }
 @media (max-width:1250px) {
     #inner #text{
@@ -435,7 +438,7 @@ nav a:first-child{
     position: absolute;
     z-index: 3;
     padding:25px;
-    background: #101010cf;
+    background: #101010da;
 }
 .grid-intro.intro ul{
     display: inline-block;
@@ -500,6 +503,12 @@ nav a:first-child{
     background-color: black;
     outline: 1px solid black;
   }
+
+  @media (min-width:2000px) {
+    .grid-intro.intro{
+        max-width: 1000px;
+    }
+}
 @media (max-width:900px) {
     #clusters{
         display: none;

@@ -506,6 +506,9 @@ let grid = [
 
 let tile_w = 200;
 let scaleF = 4;
+if(window.innerWidth > 2000){
+    scaleF = 2.5;
+}
 for(let i = 0; i < grid.length; i++){
     let img = document.createElement("img");
     img.src = "assets/tsne/" + grid[i][0];
