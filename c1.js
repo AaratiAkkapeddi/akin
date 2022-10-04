@@ -11,7 +11,7 @@ let archive_images = [
 ]
 let ogtext = "<h1>People posing with an Anjali or Namaskar Mudra - a hand gesture used as a respectful greeting and in spiritual practice.</h1><p>Composite comprised of 7 photographs from the stars.archive. Only the source of one image has been identified as originating from the R. Dasen studio in Karaikudi, while the rest remain unidentified.<br><br>“This pose stands out to me as distinct from other poses because of its religious significance. I'm immediately familiar with the idea of taking photographs to commemorate birthdays and marriages, but arranging this grouping reminded me that there are also many spiritual occasions as well. In fact, because of a sign in the background of one of the photographs in the cluster, I can assume the photograph is of Ayyappan Devotees that may be commemorating the start of, or return from, a pilgrimage to Kerala – a state in southern India.” </p>"
 let text = [
-  "<h1>R DASEN STUDIO</h1><p>Karaikudi, Tamil Nadu</p>",
+  "<h1>R. Dasen Studio</h1><p>Karaikudi, Tamil Nadu</p>",
   "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
   "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",
   "<h1>Unknown Studio</h1><p>Unknown location in Tamil Nadu</p>",

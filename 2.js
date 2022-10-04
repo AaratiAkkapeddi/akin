@@ -76,8 +76,8 @@ let text = [
     "<h1>Navajeevan Studio</h1><p>Theni, Tamil Nadu</p>",
     "<h1>Shanthi Studio</h1><p>Ulundurpet, Tamil Nadu</p>",
     "<h1>Venus Studio</h1><p>Ulundurpet, Tamil Nadu</p>",
-    "<h1>Unknown</h1><p>Chennai, Tamil Nadu<br><br>This was taken with a handheld camera, but not really sure who would've been the photographer. This is a photograph of my uncle, Seetharam Ramavarapu's volleyball team. I know anectdotally that these team members all lived on the IIT campus and come from various socio-economic backgrounds. </p>",
-    "<h1>Unknown</h1><p>Chennai, Tamil Nadu<br><br>This was taken with a handheld camera, but not really sure who would've been the photographer. This is a photograph of my uncle, Seetharam Ramavarapu's volleyball team.</p>"
+    "<h1>Unknown</h1><p>Chennai, Tamil Nadu<br><br>This was taken with a handheld camera, but I'm not really sure who would've been the photographer. This is a photograph of my uncle Seetharam Ramavarapu's volleyball team. I know anectdotally that these team members all lived on the IIT campus and come from various socio-economic backgrounds. </p>",
+    "<h1>Unknown</h1><p>Chennai, Tamil Nadu<br><br>This was taken with a handheld camera, but I'm not really sure who would've been the photographer. This is a photograph of my uncle Seetharam Ramavarapu's volleyball team.</p>"
 ]
 let loader = document.getElementById("loader")
 for(let i = 0; i < archive_images.length; i ++){

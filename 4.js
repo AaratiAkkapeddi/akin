@@ -16,7 +16,7 @@ let archive_images = [
     "PATTUKKOTTAI_12A_THANGAM STUDIO_2016_00001.png",
     "THANJAVUR_13A_G MUTHUVEL STUDIO_2015_00001.png"
 ]
-let ogtext = "<h1>Portrait of a seated woman.</h1><p>Composite of 13 photographs from R. Dasen Studio in Karaikudi, Victoria Studio in Madurai, Thangam Studio in Pattukkottai, Muthuvel Studio in Thanjavur, and other unidentified studios – all from the stars.archive.<br><br>“I have so many individual portraits of the men in my family but very few of my matriarchs, especially those that aren't ID photographs. A few of the photos in this cluster could actually be group photos that have been edited by studio photographers using a technique called vignetting.”</p>"
+let ogtext = "<h1>Portrait of a seated woman.</h1><p>Composite of 14 photographs from R. Dasen Studio in Karaikudi, Victoria Studio in Madurai, Thangam Studio in Pattukkottai, Muthuvel Studio in Thanjavur, and other unidentified studios – all from the stars.archive.<br><br>“I have so many individual portraits of the men in my family but very few of my matriarchs, especially those that aren't ID photographs. A few of the photos in this cluster could actually be group photos that have been edited by studio photographers using a technique called vignetting.”</p>"
 let text = [
     "<h1>R. Dasen Studio</h1><p>Karaikudi, Tamil Nadu.</p>",
     "<h1>R. Dasen Studio</h1><p>Karaikudi, Tamil Nadu.</p>",
