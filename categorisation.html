@@ -24,10 +24,15 @@
         <a href="./credits.html">Credits</a>
     </nav>
     <div class="grid-intro intro">
-
-        I have used <a href="https://arxiv.org/abs/1409.1556">VGG-16</a>, a machine vision algorithm by Karen Simonyan and Andrew Zisserman for object detection and image classification to organise the photographs within the kolam. <br>
-        <br>The model is trained on images from <a href="https://www.image-net.org/">ImageNet</a>, one of the most influential visual datasets in the field of machine learning with more than 14 million images scrapped from the Internet, labelled by Amazon Mechanical Turk crowdworkers and organised through 21.000 categories.
-        <br>VGG-16 detects objects on images and categorises them using just 1.000 classification classes:
+        <p>
+        I have used <a href="https://arxiv.org/abs/1409.1556">VGG-16</a>, a machine vision algorithm by Karen Simonyan and Andrew Zisserman for object detection and image classification, to organise the photographs within the kolam. Ideally, I would have developed my own model towards old photographs but I didn't have the resources to gather large amounts of photographs, to hire image annotators or to achieve the computational power required. 
+        </p>
+        <p>
+        The model is trained on images from <a href='https://www.image-net.org/'>ImageNet</a>, one of the most influential visual datasets in the field of machine learning. It contains more than 14 million images scraped from the Internet, labelled by Amazon Mechanical Turk crowdworkers and organised through 21,000 categories.
+        </p>
+        <p>
+        However, similar to the approach of the vast majority of machine vision models, VGG-16 detects objects in images and categorises them using just 1,000 classification classes:
+        </p>
 
         <ul id="cats">
             <li>0	tench, Tinca tinca</li>
@@ -1030,13 +1035,12 @@
             <li>997	bolete</li>
             <li>998	ear, spike, capitulum</li>
             <li>999	toilet tissue, toilet paper, bathroom tissue</li>
-        </ul>
-
-        The original 21.000 categories of ImageNet were created making use of WordNet, a
-        lexical dataset of English nouns, verbs, adjectives and adverbs grouped into sets expressing distinct concepts. The problems of the inherited categories to describe abstract concepts –as per example ‘fear’ or ‘happiness’– and its integration of racial and gender bias has been publicly criticised and debated.
-        <br><br>
-        Given the limited and problematic 1.000 categories of VGG-16, its classification is often incorrect:
-        <br> 
+        </ul>  
+        <p>The categories of ImageNet were created making use of <a href="https://wordnet.princeton.edu/">WordNet</a>, a
+            lexical dataset of English nouns, verbs, adjectives and adverbs grouped into sets expressing distinct concepts. Problems of the inherited categories to describe abstract concepts –for example ‘fear’ or ‘happiness’– and its integration of racial and gender bias have been publicly criticised and debated.
+        </p>
+        <p> Given the limited and problematic 1,000 categories of VGG-16, its classification is often incorrect: 
+        </p>
         <img src="assets/tsne/erode_2022-08-21_1650___ERODE___11A___RAVIVARMA STUDIO___ERODE_11A_RAVIVARMA STUDIO_2016_00001.nef.jpg"/>
         <ul>
             <li><em>predicted kimono with probability 0.835</em></li>
@@ -1046,19 +1050,19 @@
             <li><em>predicted pajama with probability 0.013</em></li>
         </ul>
         <p>
-            This misleading result could be produced by labels that aren't necessarily relevant to these types of images. For example, it’s very unlikely to find a European Fire Salamander (category id 25) in these images, while a category like bottu or bindi (the red dot applied between eyebrows) would've been helpful. 
+            This misleading result could be produced by labels that are not necessarily relevant to these types of images. For example, it is very unlikely to find a European Fire Salamander (category id 25) in these images, while a category like bottu or bindi (the red dot applied between eyebrows) would have been helpful. 
             </p>       
             <p>
-            Kimono (category id 614) (the traditional Japanese garment) is probably the closest to something like saree (the traditional Indian garment). We also should remember that the images on my family album and stars.archive are quite different from the mostly born-digital images of the ImageNet database.
+                Kimono (category id 614) (the traditional Japanese garment) is probably the closest to something like saree (the traditional Indian garment). We should also remember that the images from my family album and stars.archive are quite different from the mostly born-digital images of the ImageNet database.
            </p>
            <p>  
-            Instead of having the model classify the images from stars using these categories, I am interested in something called embedding. Before the model assigns labels from the 1.000 categories to the images, it creates a unique series of numbers (an embedding), for each image that it later uses to classify it. This embedding is a mathematical representation of the image. The method by which the model assigns numerical values to parts of the image is something that is tweaked and optimized over time by researchers until the predictions become more and more ‘accurate’ in the tests that are run. Similar images, in theory, should have embeddings that are closer in value. For example, the difference between embeddings for two images of men wearing ties should be less than an embedding for an image of a man wearing a tie and an embedding for an image of a fire truck.
+            Instead of having the model classify the images from stars.archive using preset categories, I am interested in something called embedding. Before the model assigns labels from the 1,000 categories to the images, it creates a unique series of numbers (an embedding), for each image that it later uses to classify it. This embedding is a mathematical representation of the image. The method by which the model assigns numerical values to parts of the image is something that is tweaked and optimised over time; researchers run tests until the predictions become more and more ‘accurate’. Similar images, in theory, should have embeddings that are closer in value. For example, the difference between embeddings for two images of ‘men wearing ties’ should be less than an embedding for an image of ‘a man wearing a tie’ and an embedding for an image of ‘a fire truck’.
            </p> 
            <p>
-            So, in some respects, it doesn't matter how incorrect the labels are as long as similar images get similar embeddings in the process before the categorisation happens.
+            In some respects, it doesn't matter how incorrect the labels are, as long as similar images get similar embeddings in the process before categorisation.
             </p>
 
-For example, the embedding for this image:<br>
+            For example, the embedding for this image:<br>
 <img src="assets/tsne/miscellaneous_m8_2015_00007-xmp_2022-08-23_1430___MISCELLANEOUS_M8_2015_00037.nef.jpg"/><br>
 is:
 <div id="embedding">
@@ -1220,20 +1224,19 @@ is:
    -1.77089557e-01 -5.82734048e-01 -9.92835402e-01  1.03992963e+00]
 </div>
 <br>
-The distance between these two embeddings (using <a href='https://en.wikipedia.org/wiki/Cosine_similarity'>Cosine Similarity</a>, a mathematical method of measuring similarity between two sets of numbers) is 0.33302491903305054.<br><br>
-Whereas, if we compare the embedding for the first image and the one for this image:<br>
+<p>The distance between these two embeddings (using <a href='https://en.wikipedia.org/wiki/Cosine_similarity'>Cosine Similarity</a>, a mathematical method of measuring similarity between two sets of numbers) is 0.33302491903305054.</p>
+<p>Whereas, if we compare the embedding for the first image and the one for this image:</p>
 <img src="assets/tsne/miscellaneous_m8_2015_00007-xmp_2022-08-23_1430___MISCELLANEOUS_M8_2015_00042.nef.jpg"/>
 <br>
-The distance between the embeddings is much higher at 1.0102533549070358.
-<br><br>
+<p>The distance between the embeddings is much higher at 1.0102533549070358.</p>
 <p>
-    Using these calculations, we can arrange all the images according to similarity as with the grid you in the background of this page. Looking at this grid, I intuitively started to map out groupings I saw. 
+    Using these calculations, we can arrange all the images according to similarity, as with the grid you can see in the background of this page. Looking at this grid, I intuitively started to map out groupings. 
 </p>
 <p>
-    For example, I saw close-cropped portraits of men, or images with large standing mirrors. I also tried to value meaning over the numbers of images within a cluster. Even though there might've been fewer images in a grouping, if that group of images illustrated a cultural aspect I wanted to give space to, such as the images with standing mirrors that reveal the intricate stitching of flowers into a woman's hair, I included it as a cluster.
+    For example, I saw close-cropped portraits of men, or images with large standing mirrors. I also tried to place more value on meaning than on the numbers of images within a cluster. Even though there might have been fewer images in a grouping, if that group of images illustrated a cultural aspect that I wanted to give space to –such as the images with standing mirrors that reveal the intricate stitching of flowers into a woman's hair – I included it as a cluster.
 </p> 
 <img src="./assets/cluster_example.png"/>
-<p>Using the embedding instead of the labelling categorisation allowed me to avoid the limitations and the bias of the VGG-16 model while still being useful to start organising a large collection of photographs. The algorithmic sorting facilitated an initial categorisation, that I continued and finalised signifying, along with my family members and researchers from the stars.archive. </p>
+<p>Using embedding instead of the labelling categorisation allowed me to avoid the limitations and the bias of the VGG-16 model while still employing it to start organising a large collection of photographs. The algorithmic sorting facilitated an initial categorisation, one that I continued and finalised signifying, along with my family members and researchers from the stars.archive.  </p>
 
 
     </div>
