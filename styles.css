@@ -16,8 +16,9 @@ body{
 }
 #modal{
     position: fixed;
-    overflow: scroll;
+    overflow: hidden;
     height:90%;
+    padding-bottom:10%;
     background-color: #101010cf;
     display: flex;
     width: 100%;
@@ -34,6 +35,7 @@ body{
     font-size: 20px;
     background-color: #101010;
 }
+
 #modal::before{
     background-color: #10101034;
     content:"";
@@ -453,6 +455,13 @@ nav a:first-child{
         margin-top:2em;
     }
 }
+#grid-wrapper{
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
+    width: 100vw;
+    height:100vh;
+}
 #grid img{
     cursor: pointer;
 }
@@ -464,6 +473,7 @@ nav a:first-child{
     z-index: 3;
     padding:25px;
     background: #101010da;
+    padding-bottom:25px;
 }
 .grid-intro.intro ul{
     display: inline-block;
