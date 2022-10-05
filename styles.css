@@ -8,9 +8,7 @@ body{
     letter-spacing: 0.03em;
     line-height:1.2;
 }
-/* #history, nav, #instructions, #text{
-    background-color: #101010cf;
-} */
+
 #text{
     position:relative;
 }
