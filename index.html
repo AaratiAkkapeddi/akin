@@ -62,16 +62,16 @@
         tsnes[i].addEventListener("mouseover", function(){
             
             let tsnes = document.querySelectorAll('.tsne');
-                for(let i = 0; i < tsnes.length; i ++){
-                    tsnes[i].classList.add('hovered')
-                }
+                
+                document.querySelector("#clusters").style.backgroundImage = 'url("assets/finalized2.jpg")';
+
+
                 document.getElementById("instructions-clusters").innerHTML = "<span>Select outside the clusters to learn more about the categorisation process.</span>" ;
         })
         tsnes[i].addEventListener("mouseout", function(){
             let tsnes = document.querySelectorAll('.tsne');
-                for(let i = 0; i < tsnes.length; i ++){
-                    tsnes[i].classList.remove('hovered')
-                }
+            document.querySelector("#clusters").style.backgroundImage = 'url("assets/finalized.jpg")';
+
                 document.getElementById("instructions-clusters").innerHTML = "<span>Select a Cluster to explore its individual photographs.</span>";
         })
        }

@@ -333,15 +333,23 @@ nav a:first-child{
 }
 #clusters > *:nth-child(12){
     width:15.7%;
+    
 }
 #clusters > *:nth-child(4){
     width:15.4%;
 }
+#clusters > *:nth-child(5){
+    border-top-right-radius: 50%;
+}
 #clusters > *:nth-child(8){
     width:13%;
+    margin:10px 0;
+    height: calc((100vw / 2.16684723727)/3 - 20px);
 }
 #clusters > *:nth-child(9){
     width:12%;
+    margin:10px 0;
+    height: calc((100vw / 2.16684723727)/3 - 20px);
 }
 #clusters > *:nth-child(18){
     width:15.4%;
@@ -349,15 +357,26 @@ nav a:first-child{
 
 #clusters > *:nth-child(13){
     width:12%;
+    margin:20px 0;
+    height: calc((100vw / 2.16684723727)/3 - 40px);
+}
+#clusters > *:nth-child(14){
+    width: calc(12.6% - 5px);
+    margin-left: 10px;
 }
 #clusters > a{
     background-color: rgba(245,245,245,1);
     mix-blend-mode: color;
     max-height: none;
+    border-radius: 100%;
 }
 #clusters > a:hover{
    mix-blend-mode: normal;
    background-color: transparent;
+}
+#clusters > a.tsne{
+    border-radius: 0;
+    background-color: transparent;
 }
 #clusters > a.tsne.hovered{
     mix-blend-mode: normal;
@@ -507,6 +526,11 @@ nav a:first-child{
   @media (min-width:2000px) {
     .grid-intro.intro{
         max-width: 1000px;
+    }
+}
+@media (min-width:2000px) {
+    #instructions-clusters span{
+        margin-top:8em;
     }
 }
 @media (max-width:900px) {
