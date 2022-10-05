@@ -148,7 +148,7 @@ p a:hover{
     top:10px;
 }
 #outer{
-    margin-top:50px;
+    margin-top:60px;
 }
 a:link, a:hover, a:visited, a{
     color:inherit;
@@ -442,9 +442,15 @@ nav a:first-child{
 #clusters-mobile{
     display: none;
 }
+
 @media (max-width:1100px) {
     #instructions-clusters span{
         margin-top:3em;
+    }
+}
+@media (max-width:1060px) {
+    #instructions-clusters span{
+        margin-top:2em;
     }
 }
 #grid img{
