@@ -91,6 +91,9 @@ nav::before{
 }
 #twelve #wrapper img{
     opacity: 0.1;
+    width:1000px;
+    left: 150px;
+    top:-50px;
 }
 #one #wrapper img{
     opacity: 0.4;
@@ -262,10 +265,17 @@ h1{
     #instructions-clusters span{
         margin-top:8em;
     }
+   
 }
 @media (max-width:1250px) {
     #inner #text{
         flex-basis: 20%;
+    }
+    #twelve #wrapper img{
+        opacity: 0.1;
+        width:1000px;
+        left: 50px;
+        top:-70px;
     }
 }
 @media (max-height:700px) {
@@ -566,6 +576,12 @@ nav a:first-child{
         top: 100px;
         height:50vh;
         opacity: 0.1;
+    }
+    #twelve #wrapper img{
+        opacity: 0.1;
+        width:auto;
+        left: 200px;
+        top:180px;
     }
     #history{
         width: 100%;
