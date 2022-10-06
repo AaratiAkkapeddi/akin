@@ -18,14 +18,14 @@ let ogtext = "<h1>Portrait of a seated man.</h1><p>Composite of 12 photographs f
 let text = [
     "<h1>R. Dasen Studio</h1><p>Karaikudi, Tamil Nadu.</p>",
     "<h1>Tamilnadu Studio</h1><p>Madurai, Tamil Nadu.</p>",
-    "<h1>New Studio</h1><p>Madurai, Tamil Nadu.</p>",
+    "<h1>New Studio</h1><p>Madurai, Tamil Nadu.<br><br>This image looks like it maybe was created using a technique called vignetting where black or white paper is cut around a subject to isolate them and then a new print is made.</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
+    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu<br><br>This image looks like it maybe was created using a technique called vignetting where black or white paper is cut around a subject to isolate them and then a new print is made.</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
-    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
-    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
-    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
+    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu<br><br>This image looks like it maybe was created using a technique called vignetting where black or white paper is cut around a subject to isolate them and then a new print is made.</p>",
+    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu<br><br>This image looks like it maybe was created using a technique called vignetting where black or white paper is cut around a subject to isolate them and then a new print is made.</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location but this might be in the neighboring state of Andhra Pradesh. <br><br> This is my maternal grandfather, Ramji Rao Ramavarapu. I believe this photo was taken right before he left to the United States for the first time.</p>",
 ]

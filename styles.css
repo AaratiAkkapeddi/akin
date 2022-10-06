@@ -416,6 +416,9 @@ nav a:first-child{
     margin-top:0;
     display: inline-block;
 }
+#desktop-nav{
+    padding-right: 15px;
+}
 #desktop-only{
     display: block;
 }

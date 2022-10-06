@@ -61,7 +61,7 @@ let text = [
     "<h1>Victoria Studio</h1><p>Madurai, Tamil Nadu</p>",
     "<h1>New Studio</h1><p>Madurai, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
-    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
+    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu<br><br>The woman in the center is a nun. This could be a class portrait from a missionary school.</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",

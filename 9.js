@@ -19,16 +19,16 @@ let archive_images = [
 let ogtext = "<h1>Children posing with an object for support, usually a side table with flowers.</h1><p>Composite of 14 photographs, 11 of them from the stars.archive and 3 from the artist’s family albums. Images include those from R. Dasen Studio in Coimbatore, Sundram Studio in Karaikudi, Victoria Studio in Madurai, Naidu & Sons Studio in Nagapattinam, Navakodi Studio in Thanjavur and Newtone Studio in Thoothukudi and others from unidentified sources.<br><br>“This archetype is actually not unique to Tamil photography. It points to longer exposure times where accessories, such as furniture, became a way to stabilize the subject. The objects themselves are interesting in that some in this cluster use ‘neoclassical’ backdrops such as pillars or carved wooden tables, but some are மோடா, a type of stool made from bamboo, or other rattan furniture.”</p>"
 let text = [
     "<h1>R. Dasen Studio</h1><p>Karaikudi, Tamil Nadu.</p>",
-    "<h1>Sundram Studio</h1><p>Karaikudi, Tamil Nadu.</p>",
+    "<h1>Sundram Studio</h1><p>Karaikudi, Tamil Nadu.<br><br>This child is wearing கண்மை (eyeliner).</p>",
     "<h1>Victoria Studio</h1><p>Madurai, Tamil Nadu.</p>",
     "<h1>Victoria Studio</h1><p>Madurai, Tamil Nadu.</p>",
+    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu<br><br>On the lower left side of the child's face you can see a mark made with kajal (கண்மை). This mark is to ward off evil eye. </p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
-    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
-    "<h1>G.V. Naidu & Sons Studio</h1><p>Nagapattinam, Tamil Nadu</p>",
-    "<h1>Unknown Studio</h1><p>This is photograph of my mother (Sudha Akkapeddi) as a baby.</p>",
-    "<h1>Navakodi Studio</h1><p>Thanjavur, Tamil Nadu</p>",
+    "<h1>G.V. Naidu & Sons Studio</h1><p>Nagapattinam, Tamil Nadu<br><br>This child is wearing கண்மை (eyeliner).</p>",
+    "<h1>Unknown Studio</h1><p>This is photograph of my mother (Sudha Akkapeddi) as a baby. My grandmother stitched part of her dress. It has scenery from the nursery rhyme 'Mary had a little lamb.' My mother is wearing கண்மை (eyeliner).</p>",
+    "<h1>Navakodi Studio</h1><p>Thanjavur, Tamil Nadu<br><br>This baby is wearing an அரைஞாண்,a thread or chain, around his waist. It is part of a ritual done soon after a baby is born. It is worn as protection from evil eye and other negative energy. The baby is also leaning against a மோடா, or a type of stool made from bamboo. It was mentioned to me by a family member in the context of viewing a different photo that some babies might not have been clothed in photographs in order to show that they were male. </p>",
     "<h1>Newtone Studio</h1><p>Thoothukudi, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>This is a photograph of my uncle Seetharam Ramavarapu.</p>",
     "<h1>Unknown Studio</h1><p>This is a photograph of my uncle Seetharam Ramavarapu.</p>"

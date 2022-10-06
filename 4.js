@@ -28,7 +28,7 @@ let text = [
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
-    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
+    "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu<br><br>This image looks like it maybe was created using a technique called vignetting where black or white paper is cut around a subject to isolate them and then a new print is made.</p>",
     "<h1>Unknown Studio</h1><p>Unknown location, Tamil Nadu</p>",
     "<h1>Thangam Studio</h1><p>Pattukkottai, Tamil Nadu</p>",
     "<h1>Muthuvel Studio</h1><p>Thanjavur, Tamil Nadu</p>"
