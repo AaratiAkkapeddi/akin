@@ -121,10 +121,10 @@ p a:hover{
 #instructions{
     position: relative;
     margin-left:0;
-    padding-left:25px;
+    padding-left:21px;
     z-index: 2;
     margin-top:4px;
-    padding-top: 33px;
+    padding-top: 10px;
     padding-bottom: 9px;
     width:calc(20% + 16px);
     display: inline-block;
