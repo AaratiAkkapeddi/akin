@@ -324,6 +324,9 @@ h1{
     width:35px;
     left: 40px;
 }
+.kolam+span{
+    margin-left:10px;
+}
 nav a:first-child{
     padding-right:5px;
 }
