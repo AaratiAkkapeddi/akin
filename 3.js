@@ -47,6 +47,7 @@ for(let i = 0; i < archive_images.length; i ++){
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  var clicked = false;
   if (document.getElementById(elmnt.id + "header")) {
     // if present, the header is where you move the DIV from:
     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
@@ -56,17 +57,23 @@ function dragElement(elmnt) {
   }
 
   function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    e.target.classList.add('on')
+    if(clicked){
+      closeDragElement(e);
+    }else{
+      clicked = true;
+      e = e || window.event;
+      e.preventDefault();
+      // get the mouse cursor position at startup:
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      e.target.classList.add('on')
 
-    document.querySelector("#text").innerHTML = text[parseInt(e.target.id.split("-")[1])];
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
+      document.querySelector("#text").innerHTML = text[parseInt(e.target.id.split("-")[1])];
+      
+      // call a function whenever the cursor moves:
+      document.onmousemove = elementDrag; 
+    }
+  
   }
 
   function elementDrag(e) {
