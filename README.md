@@ -1,5 +1,8 @@
 [View A·kin online](https://unthinking.photography/projects/akin/)
 
+![Screenshot 2024-08-28 at 9 56 32 AM](https://github.com/user-attachments/assets/bcdd6a94-6a1e-440f-8600-1d53c10fd2eb)
+
+
  A·kin takes artist Aarati Akkapeddi’s family photo album as its starting point. Akkapeddi combines these personal photographs, from the south Indian state Tamil Nadu, with images from the Studies in Tamil Studio Archives and Society Archive (stars.archive), a collection that investigates the history of South Indian studio photography between the 1880s and the 1980s.
 
 The work takes the shape of a ‘kolam’ where patterns are traditionally drawn with rice flour by women on their home entrance to welcome all but the evil spirits. In this case, the kolam –similarly installed at The Photographers’ Gallery Archive Display– is formed by groupings of photographs organised on a grid by an image classification algorithm, and assembled on clusters by Akkapeddi’s own artistic intervention. The technical details and problematic possibilities of algorithmic categorisation that lay at the core of the project are shared here.
